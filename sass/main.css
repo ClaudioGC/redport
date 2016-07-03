@@ -175,7 +175,7 @@ body {
 
 .toggle_box {
   display: inline-block;
-  width: 150px; }
+  width: 140px; }
 
 .checkbox_button_small {
   display: none; }
@@ -200,7 +200,7 @@ body {
       left: 0; }
 
 #reports_list {
-  padding-left: 10px; }
+  padding-left: 5px; }
 
 .user_avatar {
   width: 50px;
