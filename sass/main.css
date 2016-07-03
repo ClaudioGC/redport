@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 .pagina {
-  width: 370px;
+  width: 360px;
   margin: 0 auto;
   background-color: #7a5d6e;
   display: block;
@@ -28,7 +28,7 @@ body {
   background-color: #1c1216; }
 
 .button {
-  width: 355px;
+  width: 345px;
   height: 46px;
   margin: 0 auto;
   background-color: #1c1216;
@@ -313,7 +313,7 @@ body {
   color: #fcc92f; }
 
 .header {
-  width: 370px;
+  width: 360px;
   height: 60px;
   margin: 0 auto;
   display: block;
@@ -354,7 +354,7 @@ body {
   color: #fcc92f; }
 
 .mapa {
-  width: 355px;
+  width: 345px;
   height: 180px;
   margin: 0 auto;
   margin-top: 7px;
@@ -368,7 +368,7 @@ body {
   color: #fcc92f; }
 
 .container {
-  width: 355px;
+  width: 345px;
   height: 100%;
   margin: 0 auto;
   padding-bottom: 5px;
