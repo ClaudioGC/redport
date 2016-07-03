@@ -2,11 +2,12 @@
   box-sizing: border-box; }
 
 .pagina {
-  width: 375px;
+  width: 360px;
   margin: 0 auto;
   background-color: #7a5d6e;
   display: block;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  z-index: -3; }
 
 body {
   margin: 0 auto;
@@ -28,7 +29,7 @@ body {
   background-color: #1c1216; }
 
 .button {
-  width: 360px;
+  width: 345px;
   height: 46px;
   margin: 0 auto;
   background-color: #1c1216;
@@ -78,6 +79,15 @@ body {
 #button_small_two {
   display: inline-block;
   float: right; }
+
+.button_edit {
+  width: 25px;
+  height: 25px;
+  background: #fcc92f;
+  border-radius: 50%;
+  float: right;
+  margin: 10px;
+  margin-right: 20px; }
 
 .button_more {
   width: 200px;
@@ -175,7 +185,7 @@ body {
 
 .toggle_box {
   display: inline-block;
-  width: 150px; }
+  width: 140px; }
 
 .checkbox_button_small {
   display: none; }
@@ -200,7 +210,7 @@ body {
       left: 0; }
 
 #reports_list {
-  padding-left: 10px; }
+  padding-left: 5px; }
 
 .user_avatar {
   width: 50px;
@@ -313,7 +323,7 @@ body {
   color: #fcc92f; }
 
 .header {
-  width: 375px;
+  width: 360px;
   height: 60px;
   margin: 0 auto;
   display: block;
@@ -354,7 +364,7 @@ body {
   color: #fcc92f; }
 
 .mapa {
-  width: 360px;
+  width: 345px;
   height: 180px;
   margin: 0 auto;
   margin-top: 7px;
@@ -368,7 +378,7 @@ body {
   color: #fcc92f; }
 
 .container {
-  width: 360px;
+  width: 345px;
   height: 100%;
   margin: 0 auto;
   padding-bottom: 5px;
@@ -376,6 +386,8 @@ body {
   margin-top: 7px;
   border-radius: 4px;
   display: block; }
+  .container .edit_title {
+    margin-left: 40px; }
   .container h1 {
     margin: 0 auto;
     display: block;

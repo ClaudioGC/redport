@@ -79,6 +79,17 @@ body {
   display: inline-block;
   float: right; }
 
+.button_edit {
+  width: 25px;
+  height: 25px;
+  background: #fcc92f;
+  border-radius: 50%;
+  float: right;
+  margin: 10px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 99; }
+
 .button_more {
   width: 200px;
   margin: 0 auto;
@@ -376,6 +387,8 @@ body {
   margin-top: 7px;
   border-radius: 4px;
   display: block; }
+  .container .edit_title {
+    margin-left: 40px; }
   .container h1 {
     margin: 0 auto;
     display: block;
