@@ -1,6 +1,8 @@
 @import _variables
 
-@import _basicos
+@import _basics
+
+@import _header
 
 @import _input-form
 
@@ -12,28 +14,10 @@
 
 @import _events
 
+@import _container
 
+@import _icons
 
-
-.header
-
-	width: $ancho_pantalla
-	height: 60px
-	margin: 0 auto
-	display: block
-	background-color: $background_color
-
-	h1
-
-		margin: 0 auto
-		display: block
-		text-align: center
-		font-size: $titulo_header
-		font-family: $fuente_regular
-		font-weight: normal
-		padding: 15px 15px 10px 15px
-		position: relative
-		color: $font-color
 
 
 #title_form
@@ -82,86 +66,9 @@
 	color: $font-color
 
 
-// módulos contenedores
 
-.container
 
-	width: $ancho_contenedor
-	height: 100%
-	margin: 0 auto
-	padding-bottom: 5px
-	background-color: $background_color
-	margin-top: 7px
-	border-radius: 4px
-	display: block
-
-	.edit_title
-
-		margin-left: 40px
-	
-	h1
-
-		margin: 0 auto
-		display: block
-		text-align: center
-		font-size: 14px
-		font-family: $fuente_regular
-		font-weight: normal
-		padding: 15px 15px 40px 15px
-		position: relative 
-		color: $font-color
-
-		
-	
-
-	h2
-
-		font-size: $subtitulo_modulo
-		font-family: $fuente_regular
-		font-weight: normal
-		text-align: center
-		letter-spacing: 0.2px
-		padding-bottom: 15px
-		color: $font-color
-
-	h3
-
-		margin: 0 auto
-		display: block
-		text-align: center
-		font-size: 14px
-		font-family: $fuente_light
-		color: #565656
-		padding: 15px
-		position: relative 
-		color: $font-color
-		
-	li
-
-		font-size: $texto_contenido
-		font-family: $fuente_regular
-		position: relative 
-		list-style-type: none
-		padding-bottom: 19px
-		color: $font-color
-
-	.form_content
-
-		display: none
-		background-color: #2b1d25
-
-	.lista_form
-
-		display: inline-block
-		width: 200px
-		padding-left: 30px
-
-	.names_box
-
-		position: relative
-		display: block
-
-	//prueba de agregar remover personas
+	//prueba: agregar remover personas
 
 		#name_list
 	
@@ -179,7 +86,7 @@
 		padding-left: 30px
 
 
-//titulos contenedores editables
+//texto de los contenidos p
 
 
 p
@@ -209,8 +116,6 @@ p
 		padding-left: 20px
 		padding-right: 20px
 		color: $font-color
-
-
 
 
 

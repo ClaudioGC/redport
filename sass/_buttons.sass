@@ -15,7 +15,7 @@
 		font-family: $fuente_regular
 		text-align: center
 		display: block
-		padding-top: 13px
+		padding-top: 14px
 		margin: 7px
 		color: $font-color
 
@@ -53,7 +53,7 @@
 	border-radius: 4px
 	float: right
 	display: inline-block
-	margin: 10px
+	margin: 12px
 	margin-right: 20px
 
 #button_small_two
@@ -68,8 +68,8 @@
 	background: $small_button
 	border-radius: 50%
 	float: right
-	margin: 10px
-	margin-right: 20px
+	margin: 11px
+	margin-right: 19px
 	position: relative
 	z-index: 99
 
@@ -175,15 +175,16 @@
 		&:before
 		
 			display: block
-			content: ""
+			content: "b"
 			width: 130px	
 			height: 40px
 			border-radius: 4px
 			background: $toggle_color
 			position: relative
 			transition: $transition
-			left: 150px
-
+			left: 150px 
+	
+	font-size: 25px
 
 	&:checked
 
@@ -196,6 +197,7 @@
 			&:before
 
 				left: 0
+				content: "a" 
 
 //botón pequeño
 
@@ -221,7 +223,7 @@
 		&:before
 		
 			display: block
-			content: ""
+			content: "b"
 			width: 25px	
 			height: 15px
 			border-radius: 4px
@@ -241,6 +243,7 @@
 			&:before
 
 				left: 0
+				content: "a"
 
 .toggle_box
 	
