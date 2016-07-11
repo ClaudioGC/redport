@@ -1,9 +1,10 @@
 .button 
 
 	width: $ancho_contenedor
-	height: 46px
+	height: 55px
 	margin: 0 auto
 	background-color: $button_color
+	box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8)
 	margin-top: 7px
 	border-radius: 4px 
 	display: block
@@ -11,13 +12,14 @@
 	a
 
 		text-decoration: none
-		font-size: 13px
-		font-family: $fuente_regular
+		font-size: 16px
+		font-weight: $font_medium
+		font-family: $font-family
 		text-align: center
 		display: block
-		padding-top: 14px
+		padding-top: 17px
 		margin: 7px
-		color: $font-color
+		color: $font-color_2
 
 //botón volver del head
 .back-button
@@ -38,35 +40,36 @@
 .button_two 
 
 
-	padding: 2px 10px 4px 10px
+	padding: 8px 10px 8px 10px
 	background-color: $button_color
 	border-radius: 4px 
 	display: inline-block
 	position: relative
 	float: right
 	margin-top: 7px
-	margin-right: 10px
+	margin-right: 11px
 
 
 	a 
 
-		font-size: 11px
-		font-family: $fuente_regular
+		font-size: 13px
+		font-family: $font-family
+		font-weight: $font_bold
 		text-align: center
 		padding: 0 7px 0 7px
 		text-decoration: none
-		color: $font-color
+		color: $font-color_2
 
 .button_small_two
 
-	width: 25px
-	height: 15px
+	width: 35px
+	height: 20px
 	background: $small_button
 	border-radius: 4px
 	float: right
 	display: inline-block
 	margin: 12px
-	margin-right: 20px
+	margin-right: 11px
 
 #button_small_two
 		
@@ -75,13 +78,13 @@
 
 .button_edit
 
-	width: 25px
-	height: 25px
+	width: 30px
+	height: 30px
 	background: $small_button
 	border-radius: 50%
 	float: right
 	margin: 11px
-	margin-right: 19px
+	margin-right: 11px
 	position: relative
 	z-index: 99
 
@@ -96,10 +99,10 @@
 	a 
 
 		font-size: 11px
-		font-family: $fuente_regular
+		font-family: $font-family
 		text-align: center
 		text-decoration: none
-		color: $font-color
+		color: $font-color_2
 
 
 #text_button
@@ -133,9 +136,10 @@
 
 		display: block
 		width: 280px
-		height: 40px
+		height: 50px
 		border-radius: 4px
-		background: $off_color
+		background: $off_color_2
+
 		@include center
 		margin-bottom: 25px
 		
@@ -145,9 +149,9 @@
 			display: block
 			content: ""
 			width: 130px	
-			height: 40px
+			height: 50px
 			border-radius: 4px
-			background: $toggle_color
+			background: $off_color
 			position: relative
 			transition: $transition
 			left: 0
@@ -177,9 +181,9 @@
 
 		display: block
 		width: 280px
-		height: 40px
+		height: 50px
 		border-radius: 4px
-		background: $off_color
+		background: $on_color_2
 		@include center
 		margin-bottom: 25px
 		
@@ -187,11 +191,11 @@
 		&:before
 		
 			display: block
-			content: "b"
+			content: "a"
 			width: 130px	
-			height: 40px
+			height: 50px
 			border-radius: 4px
-			background: $toggle_color
+			background: $on_color
 			position: relative
 			transition: $transition
 			left: 150px 
@@ -204,12 +208,13 @@
 
 		+ label
 			
-			background: $on_color
+			background: $off_color_2
 
 			&:before
 
+				background: $off_color
 				left: 0
-				content: "a" 
+				content: "b" 
 
 //botón pequeño
 
@@ -217,18 +222,18 @@
 
 	display: none
 
-	//prendido
+	//apagado
 
 	+ label
 
 		display: block
-		width: 50px
-		height: 15px
+		width: 55px
+		height: 21px
 		border-radius: 4px
-		background: $off_color
+		background: $off_color_2
 		@include right
-		margin-top: 15px
-		margin-left: 80px
+		margin-top: 22px
+		margin-left: 70px
 
 
 
@@ -236,10 +241,10 @@
 		
 			display: block
 			content: "b"
-			width: 25px	
-			height: 15px
-			border-radius: 4px
-			background: $toggle_color
+			width: 30px	
+			height: 21px
+			border-radius: 3px
+			background: $off_color
 			position: relative
 			transition: $transition
 			left: 25px
@@ -250,10 +255,10 @@
 
 		+ label
 			
-			background: $on_color
+			background: $on_color_2
 
 			&:before
-
+				background: $on_color
 				left: 0
 				content: "a"
 
