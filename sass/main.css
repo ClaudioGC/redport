@@ -548,8 +548,12 @@ body {
 #texto_mapa {
   display: inline-block;
   position: relative;
-  color: #fcc92f; }
-  #texto_mapa .lista_form_1 {
+  color: #fcc92f;
+  margin-top: 15px; }
+
+.map_people {
+  height: 45px; }
+  .map_people .lista_form_1 {
     display: inline-block;
     width: 200px;
     padding-left: 30px; }
