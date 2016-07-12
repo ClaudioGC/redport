@@ -5,7 +5,7 @@
 	margin: 0 auto
 	background-color: $button_color
 	box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8)
-	margin-top: 7px
+	margin-bottom: 4px
 	border-radius: 4px 
 	display: block
 
@@ -25,17 +25,17 @@
 .back-button
 	
 	display: inline-block
-	bottom: -3px
+	bottom: -20px
 	left: 20px
 	position: relative
 	width: 25px
 	height: 25px
-
+	z-index: 99
 
 
 .container_button
 	
-	height: 40px
+	height: 45px
 
 .button_two 
 
@@ -46,8 +46,9 @@
 	display: inline-block
 	position: relative
 	float: right
-	margin-top: 7px
+	margin-top: 8px
 	margin-right: 11px
+	margin-bottom: -40px
 
 
 	a 
@@ -118,7 +119,7 @@
 
 @mixin right
 	
-	margin-right: 10px
+	margin-right: 0
 	left: 295px
 
 
@@ -232,8 +233,8 @@
 		border-radius: 4px
 		background: $off_color_2
 		@include right
-		margin-top: 22px
-		margin-left: 70px
+		margin-top: 25px
+		margin-left: 277px
 
 
 
@@ -264,8 +265,35 @@
 
 .toggle_box
 	
-	display: inline-block
-	width: 140px
+	display: block
+	width: 347px
+	padding-bottom: 20px
+
+	.texto-toggle
+
+
+		font-size: $texto_contenido
+		font-family: $font-family
+		position: relative 
+		padding-left: 0px
+		margin-left: 0px
+		color: $font-color
+		right: 243px
+		bottom: 30px
+
+.texto-checkbox
+
+	font-size: $texto_contenido
+	font-family: $font-family
+	position: relative 
+	padding-left: 0px
+	margin-left: 0px
+	color: $font-color
+	right: 285px
+	bottom: 30px
+	
+
+		
 
 	//Checkbox pequeño
 
@@ -277,20 +305,21 @@
 
 	+ label
 
-		display: block
-		width: 25px
-		height: 15px
+		display: inline-block
+		position: relative
+		width: 28px
+		height: 21px
 		border-radius: 4px
 		background: $off_color
-		@include right
-		margin-top: 15px
-		margin-left: 105px
+		left: 10px
+		margin-right: 0px
+		margin-left: 300px
 
 
 
 		&:before
 		
-			display: block
+			display: inline-block
 			content: ""
 
 	//apagado

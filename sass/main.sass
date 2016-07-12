@@ -50,15 +50,20 @@
 
 
 
-.mapa
+.map
 
 	width: $ancho_contenedor
-	height: 240px
 	margin: 0 auto
 	margin-top: 7px
 	border-radius: 4px
 	display: block
-	border: 1px solid $border_button_color
+
+	.map_content
+	
+		width: $ancho_contenedor
+		display: inline-block
+		height: 250px
+		border-radius: 4px
 
 
 #texto_mapa 
@@ -74,14 +79,14 @@
 
 	//prueba: agregar remover personas
 
-		#name_list_1
+#name_list_1
 	
-			font-size: $texto_contenido
-			font-family: $font-family
-			position: relative 
-			list-style-type: none
-			padding-bottom: 19px
-			color: $font-color
+	font-size: $texto_contenido
+	font-family: $font-family
+	position: relative 
+	list-style-type: none
+	padding-bottom: 19px
+	color: $font-color
 
 	.lista_form_1
 
@@ -105,7 +110,7 @@ p
 	color: $font-color
 
 
-.perfil_persona
+.perfil_cpersona
 	
 	padding-bottom: 15px
 

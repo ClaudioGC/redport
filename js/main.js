@@ -11,4 +11,3 @@ $('#toggle_small_4').on('click',function(){
 	$('.lista_form_1').after(clone);
 	$('#lista_form_1').appendChild('#name_list');
 });
-
