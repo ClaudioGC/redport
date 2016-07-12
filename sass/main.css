@@ -454,7 +454,13 @@ body {
     width: 0;
     color: #fcc92f; }
 
-.number_box {
+.container_event {
+  padding: 17px 0px 0px 0px; }
+
+.container_event_main {
+  padding: 25px 0px 0px 0px; }
+
+.number_box_red {
   width: 90px;
   height: 90px;
   margin: 0 20px 20px 20px;
@@ -462,8 +468,26 @@ body {
   border-radius: 50%;
   border: 6px solid #f71138; }
 
+.number_box_orange {
+  width: 90px;
+  height: 90px;
+  margin: 0 20px 20px 20px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 6px solid #ea711f; }
+
+.number_box_green {
+  width: 90px;
+  height: 90px;
+  margin: 0 20px 20px 20px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 6px solid #099c38; }
+
 #numero {
   font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   text-align: center;
   color: white; }
 
@@ -489,6 +513,24 @@ body {
   padding-right: 0;
   color: #fcc92f; }
 
+.container .event_h2 {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: left;
+  margin-left: 26px;
+  margin-right: 23px;
+  margin-top: 0px;
+  letter-spacing: 0.2px;
+  padding-bottom: 5px;
+  color: #fcc92f;
+  border-bottom: 1px solid; }
+.container .event_table {
+  width: 214px;
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 10px; }
+
 .container {
   width: 347px;
   height: 100%;
@@ -506,7 +548,7 @@ body {
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    padding: 15px 60px 40px 60px;
+    padding: 15px 40px 40px 40px;
     position: relative;
     color: #fcc92f; }
   .container h2 {
@@ -545,6 +587,23 @@ body {
   .container .names_box {
     position: relative;
     display: block; }
+
+.container_void {
+  width: 347px;
+  height: 100%;
+  margin: 0 auto;
+  display: block; }
+  .container_void h1 {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding: 17px 60px 17px 60px;
+    position: relative;
+    color: #fcc92f;
+    text-shadow: 0.2px 0.8px 1px rgba(0, 0, 0, 0.8); }
 
 [class^="rpicon-"]:before, [class*=" rpicon-"]:before {
   position: relative;
