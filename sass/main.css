@@ -222,7 +222,7 @@ body {
     margin-bottom: 25px; }
     .toggle_button_big + label:before {
       display: block;
-      content: "a";
+      content: "b";
       width: 130px;
       height: 50px;
       border-radius: 4px;
@@ -235,7 +235,7 @@ body {
     .toggle_button_big:checked + label:before {
       background: #f71138;
       left: 0;
-      content: "b"; }
+      content: "c"; }
 
 .toggle_button_small {
   display: none; }
@@ -251,7 +251,7 @@ body {
     margin-left: 277px; }
     .toggle_button_small + label:before {
       display: block;
-      content: "b";
+      content: "c";
       width: 30px;
       height: 21px;
       border-radius: 3px;
@@ -264,7 +264,7 @@ body {
     .toggle_button_small:checked + label:before {
       background: #7a58dc;
       left: 0;
-      content: "a"; }
+      content: "b"; }
 
 .toggle_box {
   display: block;
@@ -310,7 +310,7 @@ body {
     transition: all 0.3s; }
     .checkbox_button_small:checked + label:before {
       left: 0;
-      content: "a"; }
+      content: "b"; }
 
 #reports_list {
   padding-left: 5px; }
@@ -319,7 +319,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #5b5b5b;
+  background: #735968;
   position: relative;
   z-index: 99;
   float: left; }
