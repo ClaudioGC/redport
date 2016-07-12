@@ -91,6 +91,48 @@ body {
   background-color: #1c1216;
   font-size: 14px; }
 
+.form-report {
+  width: 330px;
+  margin: 0 auto;
+  padding: 23px 0 0px 0;
+  margin-bottom: -40px; }
+
+.title__box {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #fcc92f;
+  line-height: 3;
+  padding-left: 20px;
+  color: #fcc92f;
+  background-color: #1c1216;
+  font-size: 14px; }
+
+.description__box {
+  display: block;
+  width: 100%;
+  height: 100px;
+  border-radius: 4px;
+  border: 1px solid #fcc92f;
+  line-height: 3;
+  padding-left: 20px;
+  color: #fcc92f;
+  background-color: #1c1216;
+  font-size: 14px; }
+
+.title_form_input {
+  display: inline-block;
+  position: relative;
+  bottom: 90px;
+  margin-left: 14px; }
+
+.description_form_input {
+  display: inline-block;
+  position: relative;
+  bottom: 140px;
+  margin-left: 14px; }
+
 .button {
   width: 347px;
   height: 55px;
@@ -587,6 +629,23 @@ body {
   .container .names_box {
     position: relative;
     display: block; }
+
+hr {
+  border: 1px solid #fcc92f;
+  height: 4px;
+  margin-top: 20px;
+  text-align: center; }
+
+hr:after {
+  content: "Seguimiento de alertas";
+  position: relative;
+  top: -10px;
+  padding: 0px 30px 0px 30px;
+  color: #fcc92f;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: #190d11;
+  font-size: 16px; }
 
 .container_void {
   width: 347px;
