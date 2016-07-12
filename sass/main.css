@@ -531,7 +531,7 @@ body {
     font-family: "Roboto", sans-serif;
     position: relative;
     list-style-type: none;
-    padding-bottom: 19px;
+    margin-bottom: 19px;
     color: #fcc92f; }
   .container .form_content {
     display: none;
