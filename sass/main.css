@@ -177,8 +177,30 @@ body {
   float: right;
   margin-top: 8px;
   margin-right: 7px;
-  margin-bottom: -42px; }
+  bottom: 5px;
+  z-index: 99; }
   .button_two a {
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 7px 0 7px;
+    text-decoration: none;
+    color: #1c1216; }
+
+.button_two_map {
+  padding: 8px 10px 8px 10px;
+  background-color: #fcc92f;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  float: right;
+  top: 8px;
+  margin-top: 8px;
+  margin-right: 7px;
+  margin-bottom: -42px;
+  z-index: 99; }
+  .button_two_map a {
     font-size: 13px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -813,6 +835,30 @@ hr:after {
 [class^="rpicon-user-bad-small"]:before, [class*=" rpicon-user-bad-small"]:before {
   font-size: 50px; }
 
+.map {
+  width: 347px;
+  margin: 0 auto;
+  margin-top: 7px;
+  border-radius: 4px;
+  display: block; }
+  .map .map_content {
+    width: 347px;
+    display: inline-block;
+    height: 250px;
+    border-radius: 4px; }
+
+canvas.mapboxgl-canvas {
+  border-radius: 4px; }
+
+#texto_mapa {
+  display: inline-block;
+  position: relative;
+  color: #fcc92f;
+  margin-top: 15px; }
+
+.map_people {
+  height: 45px; }
+
 #title_form {
   margin: 0 auto;
   margin-bottom: 10px;
@@ -836,27 +882,6 @@ hr:after {
   padding: 20px 15px 15px 15px;
   position: relative;
   color: #fcc92f; }
-
-.map {
-  width: 347px;
-  margin: 0 auto;
-  margin-top: 7px;
-  border-radius: 4px;
-  display: block; }
-  .map .map_content {
-    width: 347px;
-    display: inline-block;
-    height: 250px;
-    border-radius: 4px; }
-
-#texto_mapa {
-  display: inline-block;
-  position: relative;
-  color: #fcc92f;
-  margin-top: 15px; }
-
-.map_people {
-  height: 45px; }
 
 #name_list_1 {
   font-size: 15px;
