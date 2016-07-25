@@ -77,10 +77,12 @@
       <div id='map' style='width: 347px; height: 250px;'></div>
 
         <script>
-        mapboxgl.accessToken = '<pk.eyJ1IjoiY2xldWRpbyIsImEiOiJjaXIxb3o2NTUwMDNvOWhrcTVwaGRudG0xIn0.ve3cEnjZjNjqpYw_hju_cQ>';
+        mapboxgl.accessToken = 'pk.eyJ1IjoiY2xldWRpbyIsImEiOiJjaXIxb3o2NTUwMDNvOWhrcTVwaGRudG0xIn0.ve3cEnjZjNjqpYw_hju_cQ';
         var map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/cleudio/ciqiooxr70000bjm0krbou6i0'
+            style: 'mapbox://styles/cleudio/ciqiooxr70000bjm0krbou6i0',
+            center: [-71.601162, -33.017948],
+            zoom: 10
         });
         </script>
 
