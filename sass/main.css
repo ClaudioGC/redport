@@ -138,7 +138,7 @@ body {
 
 .button {
   width: 347px;
-  height: 55px;
+  height: 60px;
   margin: 0 auto;
   background-color: #fcc92f;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8);
@@ -152,9 +152,13 @@ body {
     font-family: "Roboto", sans-serif;
     text-align: center;
     display: block;
-    padding-top: 17px;
+    padding-top: 19px;
     margin: 7px;
     color: #1c1216; }
+
+.button:active {
+  background-color: #7a58dc;
+  transition: all 0.2s ease; }
 
 .back-button {
   display: inline-block;
@@ -175,7 +179,7 @@ body {
   display: inline-block;
   position: relative;
   float: right;
-  margin-top: 8px;
+  margin-top: 13px;
   margin-right: 7px;
   bottom: 5px;
   z-index: 99; }
@@ -209,6 +213,14 @@ body {
     text-decoration: none;
     color: #1c1216; }
 
+.button_two:active {
+  background-color: #7a58dc;
+  transition: all 0.2s ease; }
+
+.button_two_map:active {
+  background-color: #7a58dc;
+  transition: all 0.2s ease; }
+
 .button_small_two {
   width: 35px;
   height: 20px;
@@ -222,6 +234,10 @@ body {
 #button_small_two {
   display: inline-block;
   float: right; }
+
+.button_small_two:active {
+  background-color: #7a58dc;
+  transition: all 0.2s ease; }
 
 .button_edit {
   width: 30px;
@@ -268,7 +284,7 @@ body {
       border-radius: 4px;
       background: #f71138;
       position: relative;
-      transition: all 0.3s;
+      transition: all 0.3s ease;
       left: 0; }
   .toggle_button_big:checked + label {
     background: #7a58dc; }
@@ -295,7 +311,7 @@ body {
       border-radius: 4px;
       background: #7a58dc;
       position: relative;
-      transition: all 0.3s;
+      transition: all 0.3s ease;
       left: 150px; }
   .toggle_button_big:checked + label {
     background: #a00f27; }
@@ -324,7 +340,7 @@ body {
       border-radius: 3px;
       background: #f71138;
       position: relative;
-      transition: all 0.3s;
+      transition: all 0.3s ease;
       left: 25px; }
   .toggle_button_small:checked + label {
     background: #4b3884; }
@@ -374,7 +390,7 @@ body {
       content: ""; }
   .checkbox_button_small:checked + label {
     background: #7a58dc;
-    transition: all 0.3s; }
+    transition: all 0.3s ease; }
     .checkbox_button_small:checked + label:before {
       left: 0;
       content: "b"; }
@@ -841,11 +857,6 @@ hr:after {
   margin-top: 7px;
   border-radius: 4px;
   display: block; }
-  .map .map_content {
-    width: 347px;
-    display: inline-block;
-    height: 250px;
-    border-radius: 4px; }
 
 canvas.mapboxgl-canvas {
   border-radius: 4px; }
