@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700';
 * {
   box-sizing: border-box; }
@@ -16,7 +15,7 @@ body {
 
 .header {
   width: 360px;
-  height: 60px;
+  height: 70px;
   margin: 0 auto;
   display: block;
   background-color: #fcc92f; }
@@ -47,14 +46,14 @@ body {
   .header .logo img {
     display: inline-block;
     position: relative;
-    width: 50%;
-    margin: 10px 90px 10px 90px; }
+    width: 55%;
+    margin: 10px 80px 10px 80px; }
 
 .input_rut {
   text-align: center; }
 
 .label_rut {
-  font-size: 17px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-align: center;
@@ -70,7 +69,7 @@ body {
 .login-rut__box {
   display: block;
   width: 100%;
-  height: 50px;
+  height: 60px;
   border-radius: 4px;
   border: 1px solid #fcc92f;
   line-height: 3;
@@ -83,14 +82,14 @@ body {
   display: block;
   position: relative;
   width: 100%;
-  height: 50px;
+  height: 60px;
   border-radius: 4px;
   border: 1px solid #fcc92f;
   line-height: 3;
   padding-left: 20px;
   color: #fcc92f;
   background-color: #1c1216;
-  font-size: 14px; }
+  font-size: 16px; }
 
 .form-report {
   width: 330px;
@@ -139,17 +138,17 @@ body {
 
 .button {
   width: 347px;
-  height: 60px;
+  height: 70px;
   margin: 0 auto;
   background-color: #fcc92f;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8);
   margin-top: 6px;
-  margin-bottom: 4px├º;
-  padding-top: 19px;
+  margin-bottom: 4px;
+  padding-top: 24px;
   border-radius: 4px;
   display: block;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -177,20 +176,20 @@ a:active {
   z-index: 99; }
 
 .container_button {
-  height: 45px; }
+  height: 50px; }
 
 .button_two {
   background-color: #fcc92f;
-  padding: 10px 17px 10px 17px;
+  padding: 14px 17px 14px 17px;
   border-radius: 4px;
   display: inline-block;
   position: relative;
   float: right;
-  margin-top: 13px;
+  margin-top: 17px;
   margin-right: 7px;
-  bottom: 5px;
+  bottom: 10px;
   z-index: 99;
-  font-size: 13px;
+  font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-align: center;
@@ -202,18 +201,18 @@ a:active {
     transform: scale(0.98); }
 
 .button_two_map {
-  padding: 10px 17px 10px 17px;
+  padding: 14px 17px 14px 17px;
   background-color: #fcc92f;
   border-radius: 4px;
   display: inline-block;
   position: relative;
   float: right;
-  top: 8px;
-  margin-top: 8px;
+  top: 20px;
+  margin-top: -3px;
   margin-right: 7px;
   margin-bottom: -42px;
   z-index: 99;
-  font-size: 13px;
+  font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-align: center;
@@ -225,8 +224,8 @@ a:active {
     transform: scale(0.98); }
 
 .button_small_two {
-  width: 35px;
-  height: 21px;
+  width: 40px;
+  height: 25px;
   background: #fcc92f;
   border-radius: 4px;
   float: right;
@@ -360,17 +359,17 @@ a:active {
   width: 347px;
   padding-bottom: 20px; }
   .toggle_box .texto-toggle {
-    font-size: 15px;
+    font-size: 17px;
     font-family: "Roboto", sans-serif;
     position: relative;
     padding-left: 0px;
     margin-left: 0px;
     color: #fcc92f;
     right: 243px;
-    bottom: 30px; }
+    bottom: 38px; }
 
 .texto-checkbox {
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
   position: relative;
   padding-left: 0px;
@@ -405,18 +404,19 @@ a:active {
   padding-left: 5px; }
 
 .user_avatar {
-  width: 50px;
-  height: 50px;
+  width: 47px;
+  height: 47px;
   border-radius: 50%;
   background: #735968;
   position: relative;
+  margin-left: 2px;
   z-index: 99;
   float: left; }
 
 .username #name {
-  font-size: 17px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   letter-spacing: 0.2px;
   margin-right: 10px;
   padding-bottom: 0;
@@ -426,12 +426,12 @@ a:active {
   color: #fcc92f; }
 
 .comment_date {
-  font-size: 10px;
+  font-size: 12px;
   display: inline-block;
   font-weight: 300;
   float: right;
   margin-right: 10px;
-  margin-top: 12px;
+  margin-top: 22px;
   color: #fcc92f; }
 
 .comment_box {
@@ -447,6 +447,16 @@ a:active {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px; }
+
+.comment {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  text-align: left;
+  padding-left: 0px;
+  padding-right: 0px;
+  color: #fcc92f; }
 
 .container_report {
   padding-top: 10px; }
@@ -472,7 +482,7 @@ a:active {
   margin-bottom: 15px; }
 
 #nombre_personal {
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   letter-spacing: 0.3px;
@@ -506,19 +516,19 @@ a:active {
   float: left; }
 
 .username #user_name {
-  font-size: 17px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   letter-spacing: 0.2px;
   margin: 10px 0px 5px 0px;
   padding-bottom: 0;
   padding-left: 20px;
-  padding-right: 137px;
+  padding-right: 130px;
   text-align: left;
   display: inline-block;
   color: #fcc92f; }
 .username #rut {
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   letter-spacing: 0.2px;
@@ -552,7 +562,7 @@ a:active {
 .number_box_red {
   width: 90px;
   height: 90px;
-  margin: 0 20px 20px 20px;
+  margin: 0 10px 20px 12px;
   display: inline-block;
   border-radius: 50%;
   border: 6px solid #f71138; }
@@ -560,7 +570,7 @@ a:active {
 .number_box_orange {
   width: 90px;
   height: 90px;
-  margin: 0 20px 20px 20px;
+  margin: 0 10px 20px 12px;
   display: inline-block;
   border-radius: 50%;
   border: 6px solid #ea711f; }
@@ -568,7 +578,7 @@ a:active {
 .number_box_green {
   width: 90px;
   height: 90px;
-  margin: 0 20px 20px 20px;
+  margin: 0 10px 20px 12px;
   display: inline-block;
   border-radius: 50%;
   border: 6px solid #099c38; }
@@ -585,12 +595,12 @@ a:active {
   padding: 0; }
 
 .table {
-  width: 214px;
+  width: 235px;
   position: relative;
   float: right; }
 
 .table_text {
-  font-size: 13px;
+  font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   letter-spacing: 0.2px;
@@ -603,7 +613,7 @@ a:active {
   color: #fcc92f; }
 
 .container .event_h2 {
-  font-size: 17px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   text-align: left;
@@ -624,7 +634,7 @@ a:active {
   width: 347px;
   height: 100%;
   margin: 0 auto;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   background-color: #190d11;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8);
   margin-top: 7px;
@@ -634,14 +644,14 @@ a:active {
     margin: 0 auto;
     display: block;
     text-align: center;
-    font-size: 17px;
+    font-size: 18px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     padding: 15px 40px 40px 60px;
     position: relative;
     color: #fcc92f; }
   .container h2 {
-    font-size: 17px;
+    font-size: 18px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-align: center;
@@ -659,7 +669,7 @@ a:active {
     position: relative;
     color: #fcc92f; }
   .container li {
-    font-size: 15px;
+    font-size: 17px;
     font-family: "Roboto", sans-serif;
     position: relative;
     list-style-type: none;
@@ -684,27 +694,27 @@ a:active {
   padding-bottom: 5px;
   background-color: #fcc92f;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8);
-  margin-top: 7px;
+  margin-top: 5px;
   border-radius: 4px;
   display: block; }
   .container_2 h1 {
     margin: 0 auto;
     display: block;
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     padding: 15px 40px 40px 40px;
     position: relative;
     color: #1c1216; }
   .container_2 h2 {
-    font-size: 17px;
+    font-size: 18px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.2px;
-    margin-top: 5px;
-    padding-bottom: 15px;
+    margin-top: 10px;
+    padding-bottom: 25px;
     color: #1c1216; }
 
 hr {
@@ -722,7 +732,7 @@ hr:after {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   background-color: #190d11;
-  font-size: 17px; }
+  font-size: 18px; }
 
 .container_void {
   width: 347px;
@@ -733,13 +743,24 @@ hr:after {
     margin: 0 auto;
     display: block;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     padding: 17px 60px 17px 60px;
     position: relative;
     color: #fcc92f;
     text-shadow: 0.2px 0.8px 1px rgba(0, 0, 0, 0.8); }
+
+.container_search {
+  width: 347px;
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  background-color: #190d11;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8);
+  margin-top: 7px;
+  border-radius: 4px;
+  display: block; }
 
 [class^="rpicon-"]:before, [class*=" rpicon-"]:before {
   position: relative;
@@ -755,7 +776,7 @@ hr:after {
 [class^="rpicon-home"]:before, [class*=" rpicon-home"]:before {
   position: relative;
   color: #fcc92f;
-  font-size: 50px;
+  font-size: 55px;
   line-height: 1.2 !important; }
 
 .home-icon-container {
@@ -788,11 +809,11 @@ hr:after {
 [class^="rpicon-more"]:before, [class*=" rpicon-more"]:before {
   position: relative;
   color: #190d11;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 2.3 !important; }
 
 .rpicon-more {
-  margin: -2px;
+  margin: 1px;
   text-align: center; }
 
 [class^="rpicon-edit"]:before, [class*=" rpicon-edit"]:before {
@@ -808,7 +829,7 @@ hr:after {
   text-align: center; }
 
 .rpicon-search {
-  margin-top: 14px;
+  margin-top: 20px;
   margin-left: 311px;
   position: absolute;
   text-decoration: none;
@@ -838,24 +859,24 @@ hr:after {
   font-size: 75px; }
 
 .rpicon-user-good-small {
-  margin-top: 12px;
-  margin-left: 6px;
+  margin-top: 13px;
+  margin-left: 7px;
   position: absolute;
   text-decoration: none;
   z-index: 99; }
 
 [class^="rpicon-user-good-small"]:before, [class*=" rpicon-user-good-small"]:before {
-  font-size: 50px; }
+  font-size: 45px; }
 
 .rpicon-user-bad-small {
-  margin-top: 12px;
-  margin-left: 6px;
+  margin-top: 13px;
+  margin-left: 7px;
   position: absolute;
   text-decoration: none;
   z-index: 99; }
 
 [class^="rpicon-user-bad-small"]:before, [class*=" rpicon-user-bad-small"]:before {
-  font-size: 50px; }
+  font-size: 45px; }
 
 .map {
   width: 347px;
@@ -871,17 +892,17 @@ canvas.mapboxgl-canvas {
   display: inline-block;
   position: relative;
   color: #fcc92f;
-  margin-top: 15px; }
+  margin-top: 20px; }
 
 .map_people {
-  height: 45px; }
+  height: 50px; }
 
 #title_form {
   margin: 0 auto;
   margin-bottom: 10px;
   display: block;
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   padding: 20px 15px 15px 15px;
@@ -893,7 +914,7 @@ canvas.mapboxgl-canvas {
   margin-bottom: 10px;
   display: block;
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   padding: 20px 15px 15px 15px;
@@ -901,7 +922,7 @@ canvas.mapboxgl-canvas {
   color: #fcc92f; }
 
 #name_list_1 {
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
   position: relative;
   list-style-type: none;
@@ -913,10 +934,10 @@ canvas.mapboxgl-canvas {
     padding-left: 30px; }
 
 p {
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  letter-spacing: 0, 7px;
+  letter-spacing: 0.8px;
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
@@ -925,7 +946,7 @@ p {
 .perfil_persona {
   padding-bottom: 15px; }
   .perfil_persona p {
-    font-size: 15px;
+    font-size: 17px;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     letter-spacing: 0.3px;
