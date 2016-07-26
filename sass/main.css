@@ -154,10 +154,10 @@ body {
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: #1c1216; }
-
-.button:active {
-  background-color: #7a58dc;
-  transition: all 0.2s ease; }
+  .button:active {
+    background-color: #7a58dc;
+    transition: all 0.2s ease;
+    transform: scale(0.98); }
 
 a:active {
   color: #fcc92f;
@@ -196,6 +196,10 @@ a:active {
   text-align: center;
   text-decoration: none;
   color: #1c1216; }
+  .button_two:active {
+    background-color: #7a58dc;
+    transition: all 0.2s ease;
+    transform: scale(0.98); }
 
 .button_two_map {
   padding: 10px 17px 10px 17px;
@@ -215,14 +219,10 @@ a:active {
   text-align: center;
   text-decoration: none;
   color: #1c1216; }
-
-.button_two:active {
-  background-color: #7a58dc;
-  transition: all 0.2s ease; }
-
-.button_two_map:active {
-  background-color: #7a58dc;
-  transition: all 0.2s ease; }
+  .button_two_map:active {
+    background-color: #7a58dc;
+    transition: all 0.2s ease;
+    transform: scale(0.98); }
 
 .button_small_two {
   width: 35px;
@@ -233,14 +233,14 @@ a:active {
   display: inline-block;
   margin: 12px;
   margin-right: 11px; }
+  .button_small_two:active {
+    background-color: #7a58dc;
+    transition: all 0.2s ease;
+    transform: scale(0.98); }
 
 #button_small_two {
   display: inline-block;
   float: right; }
-
-.button_small_two:active {
-  background-color: #7a58dc;
-  transition: all 0.2s ease; }
 
 .button_edit {
   width: 35px;
@@ -252,10 +252,9 @@ a:active {
   margin-right: 11px;
   position: relative;
   z-index: 99; }
-
-.button_edit:active {
-  background-color: #7a58dc;
-  transition: all 0.2s ease; }
+  .button_edit:active {
+    background-color: #7a58dc;
+    transition: all 0.2s ease; }
 
 .button_more {
   width: 200px;

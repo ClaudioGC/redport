@@ -18,10 +18,11 @@
 
 	color: $font-color_2
 
-.button:active 
+	&:active 
 
-	background-color: $on_color
-	transition: $transition_slow 
+		background-color: $on_color
+		transition: $transition_slow 
+		transform: scale(.98)
 
 a:active
 
@@ -68,6 +69,12 @@ a:active
 	text-decoration: none
 	color: $font-color_2
 
+	&:active 
+
+		background-color: $on_color
+		transition: $transition_slow 
+		transform: scale(.98)
+
 .button_two_map
 
 	padding: 10px 17px 10px 17px
@@ -88,15 +95,11 @@ a:active
 	text-decoration: none
 	color: $font-color_2
 
-.button_two:active 
+	&:active 
 
-	background-color: $on_color
-	transition: $transition_slow 
-
-.button_two_map:active 
-
-	background-color: $on_color
-	transition: $transition_slow 
+		background-color: $on_color
+		transition: $transition_slow 
+		transform: scale(.98)
 
 
 .button_small_two
@@ -110,15 +113,17 @@ a:active
 	margin: 12px
 	margin-right: 11px
 
+	&:active 
+
+		background-color: $on_color
+		transition: $transition_slow 
+		transform: scale(.98)
+
+
 #button_small_two
 		
 	display: inline-block
 	float: right
-
-.button_small_two:active 
-
-	background-color: $on_color
-	transition: $transition_slow 
 
 .button_edit
 
@@ -132,10 +137,10 @@ a:active
 	position: relative
 	z-index: 99
 
-.button_edit:active
+	&:active
 	
-	background-color: $on_color
-	transition: $transition_slow 
+		background-color: $on_color
+		transition: $transition_slow 
 
 .button_more
 	
