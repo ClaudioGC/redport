@@ -155,7 +155,7 @@ body {
   color: #1c1216; }
   .button:active {
     background-color: #7a58dc;
-    transition: all 0.2s ease;
+    transition: all 0.01s ease;
     transform: scale(0.98); }
 
 a:active {
@@ -197,7 +197,7 @@ a:active {
   color: #1c1216; }
   .button_two:active {
     background-color: #7a58dc;
-    transition: all 0.2s ease;
+    transition: all 0.01s ease;
     transform: scale(0.98); }
 
 .button_two_map {
@@ -220,7 +220,7 @@ a:active {
   color: #1c1216; }
   .button_two_map:active {
     background-color: #7a58dc;
-    transition: all 0.2s ease;
+    transition: all 0.01s ease;
     transform: scale(0.98); }
 
 .button_small_two {
@@ -234,7 +234,7 @@ a:active {
   margin-right: 11px; }
   .button_small_two:active {
     background-color: #7a58dc;
-    transition: all 0.2s ease;
+    transition: all 0.01s ease;
     transform: scale(0.98); }
 
 #button_small_two {
@@ -244,16 +244,18 @@ a:active {
 .button_edit {
   width: 35px;
   height: 35px;
-  background: #fcc92f;
+  background-color: #fcc92f;
   border-radius: 50%;
   float: right;
   margin: 11px;
   margin-right: 11px;
   position: relative;
-  z-index: 99; }
+  z-index: 99;
+  text-decoration: none; }
   .button_edit:active {
     background-color: #7a58dc;
-    transition: all 0.2s ease; }
+    transition: all 0.01s ease;
+    transform: scale(0.95); }
 
 .button_more {
   width: 200px;
@@ -376,7 +378,7 @@ a:active {
   margin-left: 0px;
   color: #fcc92f;
   right: 285px;
-  bottom: 30px; }
+  bottom: 35px; }
 
 .checkbox_button_small {
   display: none; }
@@ -388,6 +390,7 @@ a:active {
     border-radius: 4px;
     background: #f71138;
     left: 10px;
+    top: 20px;
     margin-right: 0px;
     margin-left: 300px; }
     .checkbox_button_small + label:before {
@@ -414,7 +417,7 @@ a:active {
   float: left; }
 
 .username #name {
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   letter-spacing: 0.2px;
@@ -504,8 +507,8 @@ a:active {
   margin-bottom: 5px; }
 
 .user_avatar_2 {
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   background: #735968;
   position: relative;
@@ -516,7 +519,7 @@ a:active {
   float: left; }
 
 .username #user_name {
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   letter-spacing: 0.2px;
@@ -585,6 +588,7 @@ a:active {
 
 #numero {
   font-size: 24px;
+  margin-top: 25px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   text-align: center;
@@ -613,7 +617,7 @@ a:active {
   color: #fcc92f; }
 
 .container .event_h2 {
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   text-align: left;
@@ -630,6 +634,16 @@ a:active {
   padding-left: 22px;
   margin-bottom: 10px; }
 
+.alerts {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fcc92f; }
+
 .container {
   width: 347px;
   height: 100%;
@@ -644,14 +658,24 @@ a:active {
     margin: 0 auto;
     display: block;
     text-align: center;
-    font-size: 18px;
+    font-size: 19px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    padding: 15px 40px 40px 60px;
+    padding: 15px 20px 40px 20px;
+    position: relative;
+    color: #fcc92f; }
+  .container .title-icon {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    padding: 15px 55px 40px 55px;
     position: relative;
     color: #fcc92f; }
   .container h2 {
-    font-size: 18px;
+    font-size: 17px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-align: center;
@@ -708,7 +732,7 @@ a:active {
     position: relative;
     color: #1c1216; }
   .container_2 h2 {
-    font-size: 18px;
+    font-size: 17px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     text-align: center;
@@ -732,7 +756,7 @@ hr:after {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   background-color: #190d11;
-  font-size: 18px; }
+  font-size: 19px; }
 
 .container_void {
   width: 347px;
@@ -770,7 +794,7 @@ hr:after {
 [class^="rpicon-back"]:before, [class*=" rpicon-back"]:before {
   position: relative;
   color: #190d11;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 1.2 !important; }
 
 [class^="rpicon-home"]:before, [class*=" rpicon-home"]:before {
@@ -801,7 +825,8 @@ hr:after {
   font-size: 12px;
   line-height: 1.4 !important;
   text-align: center;
-  padding-left: 9px; }
+  padding-left: 9px;
+  top: 3px; }
 
 .rpicon-toggle-small-inverse {
   width: 10px; }
@@ -810,6 +835,7 @@ hr:after {
   position: relative;
   color: #190d11;
   font-size: 12px;
+  bottom: 1px;
   line-height: 2.3 !important; }
 
 .rpicon-more {
@@ -827,6 +853,9 @@ hr:after {
 .rpicon-edit {
   margin: 5px;
   text-align: center; }
+  .rpicon-edit:active {
+    color: #fcc92f;
+    transition: all 0.01s ease; }
 
 .rpicon-search {
   margin-top: 20px;
@@ -902,7 +931,7 @@ canvas.mapboxgl-canvas {
   margin-bottom: 10px;
   display: block;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   padding: 20px 15px 15px 15px;
@@ -914,7 +943,7 @@ canvas.mapboxgl-canvas {
   margin-bottom: 10px;
   display: block;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   padding: 20px 15px 15px 15px;

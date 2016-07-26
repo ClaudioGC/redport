@@ -129,18 +129,20 @@ a:active
 
 	width: 35px
 	height: 35px
-	background: $small_button
+	background-color: $small_button
 	border-radius: 50%
 	float: right
 	margin: 11px
 	margin-right: 11px
 	position: relative
 	z-index: 99
+	text-decoration: none
 
 	&:active
 	
 		background-color: $on_color
 		transition: $transition_slow 
+		transform: scale(.95)
 
 .button_more
 	
@@ -341,7 +343,7 @@ a:active
 	margin-left: 0px
 	color: $font-color
 	right: 285px
-	bottom: 30px
+	bottom: 35px
 	
 
 		
@@ -363,6 +365,7 @@ a:active
 		border-radius: 4px
 		background: $off_color
 		left: 10px
+		top: 20px
 		margin-right: 0px
 		margin-left: 300px
 

@@ -10,7 +10,7 @@
 
 	position: relative
 	color: $background_color
-	font-size: 20px
+	font-size: 21px
 	line-height: 1.2 !important
 
 [class^="rpicon-home"]:before, [class*=" rpicon-home"]:before
@@ -52,6 +52,7 @@
 	line-height: 1.4 !important
 	text-align: center
 	padding-left: 9px
+	top: 3px
 
 //ajuste de posición ícono "more" 
 .rpicon-toggle-small-inverse
@@ -63,6 +64,7 @@
 	position: relative
 	color: $background_color
 	font-size: 12px
+	bottom: 1px
 	line-height: 2.3 !important
 
 //ajuste de posición ícono "more" 
@@ -85,6 +87,11 @@
 	
 	margin: 5px
 	text-align: center
+
+	&:active
+
+		color: $font-color
+		transition: $transition_slow 
 
 //ajustes de ícono "search"
 
