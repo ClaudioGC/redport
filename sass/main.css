@@ -644,6 +644,82 @@ a:active {
   padding-right: 25px;
   color: #fcc92f; }
 
+.indicators {
+  display: block;
+  height: 130px; }
+
+.indicator {
+  width: 95px;
+  height: 110px;
+  display: inline-block;
+  position: relative;
+  margin: 0px 2px 0px 2px;
+  left: 21px;
+  border-radius: 4px;
+  border: 1px solid #fcc92f; }
+
+.bar_uv_background {
+  width: 40px;
+  height: 3px;
+  background-color: #6d5815;
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+  left: 25px;
+  bottom: 21px; }
+
+.bar_background {
+  width: 70px;
+  height: 3px;
+  background-color: #6d5815;
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 10px;
+  bottom: 21px; }
+
+.bar_uv {
+  width: 40px;
+  height: 3px;
+  background-color: #fcc92f;
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+  left: 25px;
+  bottom: 45px; }
+
+.text_uv {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+  left: 9px;
+  color: #fcc92f; }
+
+.bar {
+  width: 20px;
+  height: 3px;
+  background-color: #fcc92f;
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 11px;
+  bottom: 45px; }
+
+.text_indicator {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.8px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  color: #fcc92f; }
+
 .container {
   width: 347px;
   height: 100%;
@@ -906,6 +982,39 @@ hr:after {
 
 [class^="rpicon-user-bad-small"]:before, [class*=" rpicon-user-bad-small"]:before {
   font-size: 45px; }
+
+.rpicon-uv {
+  margin-top: 15px;
+  margin-left: 20px;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-uv"]:before, [class*=" rpicon-uv"]:before {
+  position: relative;
+  color: #fcc92f;
+  font-size: 50px; }
+
+.rpicon-humidity {
+  margin-top: 15px;
+  margin-left: 20px;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-humidity"]:before, [class*=" rpicon-humidity"]:before {
+  position: relative;
+  color: #fcc92f;
+  font-size: 50px; }
+
+.rpicon-temperature {
+  margin-top: 15px;
+  margin-left: 20px;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-temperature"]:before, [class*=" rpicon-temperature"]:before {
+  position: relative;
+  color: #fcc92f;
+  font-size: 50px; }
 
 .map {
   width: 347px;
