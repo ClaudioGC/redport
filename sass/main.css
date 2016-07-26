@@ -659,13 +659,13 @@ a:active {
   border: 1px solid #fcc92f; }
 
 .bar_uv_background {
-  width: 40px;
+  width: 57px;
   height: 3px;
   background-color: #6d5815;
   position: relative;
   display: inline-block;
   margin-top: 15px;
-  left: 25px;
+  left: 7px;
   bottom: 21px; }
 
 .bar_background {
@@ -686,7 +686,7 @@ a:active {
   display: inline-block;
   margin-top: 15px;
   left: 25px;
-  bottom: 45px; }
+  bottom: 43px; }
 
 .text_uv {
   font-size: 12px;
@@ -708,7 +708,7 @@ a:active {
   display: inline-block;
   margin-top: 15px;
   margin-left: 11px;
-  bottom: 45px; }
+  bottom: 43px; }
 
 .text_indicator {
   font-size: 15px;
