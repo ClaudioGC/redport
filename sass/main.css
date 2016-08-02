@@ -3,7 +3,7 @@
   box-sizing: border-box; }
 
 .pagina {
-  width: 360px;
+  width: 22.5em;
   margin: 0 auto;
   background-color: #735968;
   display: block;
@@ -14,7 +14,7 @@ body {
   background-color: #b5b5b5; }
 
 .header {
-  width: 360px;
+  width: 22.5em;
   height: 70px;
   margin: 0 auto;
   display: block;
@@ -137,7 +137,7 @@ body {
   margin-left: 14px; }
 
 .button {
-  width: 347px;
+  width: 19.2em;
   height: 70px;
   margin: 0 auto;
   background-color: #fcc92f;
@@ -196,6 +196,28 @@ a:active {
   text-decoration: none;
   color: #1c1216; }
   .button_two:active {
+    background-color: #7a58dc;
+    transition: all 0.01s ease;
+    transform: scale(0.98); }
+
+.button_two_event {
+  background-color: #fcc92f;
+  padding: 14px 17px 14px 17px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin-top: 17px;
+  margin-right: 7px;
+  bottom: 10px;
+  z-index: 99;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #1c1216; }
+  .button_two_event:active {
     background-color: #7a58dc;
     transition: all 0.01s ease;
     transform: scale(0.98); }
@@ -410,7 +432,7 @@ a:active {
   width: 47px;
   height: 47px;
   border-radius: 50%;
-  background: #735968;
+  background: #4a3a42;
   position: relative;
   margin-left: 2px;
   z-index: 99;
@@ -480,7 +502,7 @@ a:active {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: #735968;
+  background: #4a3a42;
   margin: 0 auto;
   margin-bottom: 15px; }
 
@@ -501,6 +523,7 @@ a:active {
 
 .user_box {
   width: 346px;
+  height: 100%;
   background-color: #2b1d25;
   position: relative;
   float: right;
@@ -510,7 +533,7 @@ a:active {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: #735968;
+  background: #4a3a42;
   position: relative;
   margin-top: 6px;
   margin-bottom: 6px;
@@ -526,14 +549,14 @@ a:active {
   margin: 10px 0px 5px 0px;
   padding-bottom: 0;
   padding-left: 20px;
-  padding-right: 130px;
+  padding-right: 90px;
   text-align: left;
   display: inline-block;
   color: #fcc92f; }
-.username #rut {
-  font-size: 17px;
+.username #distance {
+  font-size: 15px;
   font-family: "Roboto", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   letter-spacing: 0.2px;
   margin: 5px 0px 5px 0px;
   padding-bottom: 0;
@@ -556,6 +579,18 @@ a:active {
     width: 0;
     color: #fcc92f; }
 
+.state_user_box {
+  width: 43px;
+  height: 43px;
+  border-radius: 4px;
+  background: #4a3a42;
+  position: relative;
+  margin-top: 5px;
+  margin-right: 7px;
+  margin-bottom: 10px;
+  z-index: 99;
+  float: right; }
+
 .container_event {
   padding: 17px 0px 0px 0px; }
 
@@ -576,7 +611,7 @@ a:active {
   margin: 0 10px 20px 12px;
   display: inline-block;
   border-radius: 50%;
-  border: 6px solid #ea711f; }
+  border: 6px solid #f17928; }
 
 .number_box_green {
   width: 90px;
@@ -584,7 +619,7 @@ a:active {
   margin: 0 10px 20px 12px;
   display: inline-block;
   border-radius: 50%;
-  border: 6px solid #099c38; }
+  border: 6px solid #43af49; }
 
 #numero {
   font-size: 24px;
@@ -601,7 +636,8 @@ a:active {
 .table {
   width: 235px;
   position: relative;
-  float: right; }
+  float: right;
+  bottom: 10px; }
 
 .table_text {
   font-size: 14px;
@@ -628,6 +664,17 @@ a:active {
   padding-bottom: 5px;
   color: #fcc92f;
   border-bottom: 1px solid; }
+.container .event_title {
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #565656;
+  padding: 7px;
+  bottom: 75px;
+  position: relative;
+  color: #fcc92f; }
 .container .event_table {
   width: 214px;
   position: relative;
@@ -681,7 +728,7 @@ a:active {
 .bar_uv {
   width: 40px;
   height: 3px;
-  background-color: #fcc92f;
+  background-color: #ea711f;
   position: relative;
   display: inline-block;
   margin-top: 15px;
@@ -700,8 +747,18 @@ a:active {
   left: 9px;
   color: #fcc92f; }
 
-.bar {
-  width: 20px;
+.bar_h {
+  width: 10px;
+  height: 3px;
+  background-color: #fcc92f;
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 11px;
+  bottom: 43px; }
+
+.bar_t {
+  width: 30px;
   height: 3px;
   background-color: #fcc92f;
   position: relative;
@@ -720,8 +777,23 @@ a:active {
   margin-bottom: 16px;
   color: #fcc92f; }
 
+.effects {
+  display: block;
+  height: 80px; }
+
+.effect {
+  width: 50px;
+  height: 50px;
+  float: right;
+  display: inline-block;
+  position: relative;
+  margin: 7px 6px 0px 6px;
+  right: 15px;
+  border-radius: 50%;
+  background-color: #6d5815; }
+
 .container {
-  width: 347px;
+  width: 21.6875em;
   height: 100%;
   margin: 0 auto;
   padding-bottom: 10px;
@@ -788,7 +860,7 @@ a:active {
     display: block; }
 
 .container_2 {
-  width: 347px;
+  width: 21.6875em;
   height: 100%;
   margin: 0 auto;
   padding-bottom: 5px;
@@ -835,7 +907,7 @@ hr:after {
   font-size: 19px; }
 
 .container_void {
-  width: 347px;
+  width: 21.6875em;
   height: 100%;
   margin: 0 auto;
   display: block; }
@@ -852,7 +924,7 @@ hr:after {
     text-shadow: 0.2px 0.8px 1px rgba(0, 0, 0, 0.8); }
 
 .container_search {
-  width: 347px;
+  width: 21.6875em;
   height: 100%;
   margin: 0 auto;
   padding-bottom: 5px;
@@ -951,7 +1023,8 @@ hr:after {
   z-index: 99; }
 
 [class^="rpicon-user-good"]:before, [class*=" rpicon-user-good"]:before {
-  font-size: 75px; }
+  font-size: 75px;
+  color: #43af49; }
 
 .rpicon-user-bad {
   margin-top: 14px;
@@ -961,7 +1034,8 @@ hr:after {
   z-index: 99; }
 
 [class^="rpicon-user-bad"]:before, [class*=" rpicon-user-bad"]:before {
-  font-size: 75px; }
+  font-size: 75px;
+  color: #f71138; }
 
 .rpicon-user-good-small {
   margin-top: 13px;
@@ -1016,8 +1090,63 @@ hr:after {
   color: #fcc92f;
   font-size: 50px; }
 
+.rpicon-tsunami {
+  margin-top: 6px;
+  margin-left: 3px;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-tsunami"]:before, [class*=" rpicon-tsunami"]:before {
+  position: relative;
+  color: #fcc92f;
+  font-size: 46px; }
+
+.rpicon-rupture-home {
+  margin-top: 5px;
+  margin-left: 4px;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-rupture-home"]:before, [class*=" rpicon-rupture-home"]:before {
+  position: relative;
+  color: #fcc92f;
+  font-size: 40px; }
+
+.rpicon-chronic-patient {
+  margin-top: 6px;
+  margin-left: 6px;
+  position: absolute;
+  text-decoration: none;
+  z-index: 99; }
+
+[class^="rpicon-chronic-patient"]:before, [class*=" rpicon-chronic-patient"]:before {
+  font-size: 34px;
+  color: #fcc92f; }
+
+.rpicon-trapped {
+  margin-top: 6px;
+  margin-left: 4px;
+  position: absolute;
+  text-decoration: none;
+  z-index: 99; }
+
+[class^="rpicon-trapped"]:before, [class*=" rpicon-chronic-patient"]:before {
+  font-size: 34px;
+  color: #fcc92f; }
+
+.rpicon-injured {
+  margin-top: 5px;
+  margin-left: 5px;
+  position: absolute;
+  text-decoration: none;
+  z-index: 99; }
+
+[class^="rpicon-injured"]:before, [class*=" rpicon-injured"]:before {
+  font-size: 34px;
+  color: #fcc92f; }
+
 .map {
-  width: 347px;
+  width: 21.6875em;
   margin: 0 auto;
   margin-top: 7px;
   border-radius: 4px;

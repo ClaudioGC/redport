@@ -1,6 +1,6 @@
 .button 
 
-	width: $ancho_contenedor
+	width: $ancho_btn_grande
 	height: 70px
 	margin: 0 auto
 	background-color: $button_color
@@ -51,6 +51,31 @@ a:active
 	height: 50px
 
 .button_two 
+
+	background-color: $button_color
+	padding: 14px 17px 14px 17px
+	border-radius: 4px 
+	display: inline-block
+	position: relative
+	float: right
+	margin-top: 17px
+	margin-right: 7px
+	bottom: 10px
+	z-index: 99
+	font-size: 15px
+	font-family: $font-family
+	font-weight: $font_bold
+	text-align: center
+	text-decoration: none
+	color: $font-color_2
+
+	&:active 
+
+		background-color: $on_color
+		transition: $transition_slow 
+		transform: scale(.98)
+
+.button_two_event
 
 	background-color: $button_color
 	padding: 14px 17px 14px 17px
