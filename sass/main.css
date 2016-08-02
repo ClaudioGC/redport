@@ -26,7 +26,7 @@ body {
     .header .title_header h1 {
       margin: 0 auto;
       text-align: center;
-      font-size: 24px;
+      font-size: 26px;
       font-family: "Roboto", sans-serif;
       font-weight: 400;
       padding: 10px 20px 10px 20px;
@@ -35,7 +35,7 @@ body {
   .header h1 {
     margin: 0 auto;
     text-align: center;
-    font-size: 24px;
+    font-size: 26px;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     padding: 15px 15px 10px 15px;
@@ -49,11 +49,16 @@ body {
     width: 55%;
     margin: 10px 80px 10px 80px; }
 
+.message-button {
+  float: right;
+  display: inline-block;
+  margin: -51px 20px 0px 0px; }
+
 .input_rut {
   text-align: center; }
 
 .label_rut {
-  font-size: 20px;
+  font-size: 23px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-align: center;
@@ -176,7 +181,7 @@ a:active {
   z-index: 99; }
 
 .container_button {
-  height: 50px; }
+  height: 60px; }
 
 .button_two {
   background-color: #fcc92f;
@@ -262,22 +267,6 @@ a:active {
 #button_small_two {
   display: inline-block;
   float: right; }
-
-.button_edit {
-  width: 35px;
-  height: 35px;
-  background-color: #fcc92f;
-  border-radius: 50%;
-  float: right;
-  margin: 11px;
-  margin-right: 11px;
-  position: relative;
-  z-index: 99;
-  text-decoration: none; }
-  .button_edit:active {
-    background-color: #7a58dc;
-    transition: all 0.01s ease;
-    transform: scale(0.95); }
 
 .button_more {
   width: 200px;
@@ -439,7 +428,7 @@ a:active {
   float: left; }
 
 .username #name {
-  font-size: 17px;
+  font-size: 19px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   letter-spacing: 0.2px;
@@ -591,6 +580,12 @@ a:active {
   z-index: 99;
   float: right; }
 
+.perfil_persona_container {
+  display: block;
+  padding: 40px 0px 10px 0px;
+  height: 100%;
+  width: 21.6875em; }
+
 .container_event {
   padding: 17px 0px 0px 0px; }
 
@@ -600,7 +595,7 @@ a:active {
 .number_box_red {
   width: 90px;
   height: 90px;
-  margin: 0 10px 20px 12px;
+  margin: 5px 10px 5px 12px;
   display: inline-block;
   border-radius: 50%;
   border: 6px solid #f71138; }
@@ -608,7 +603,7 @@ a:active {
 .number_box_orange {
   width: 90px;
   height: 90px;
-  margin: 0 10px 20px 12px;
+  margin: 5px 10px 5px 12px;
   display: inline-block;
   border-radius: 50%;
   border: 6px solid #f17928; }
@@ -616,7 +611,7 @@ a:active {
 .number_box_green {
   width: 90px;
   height: 90px;
-  margin: 0 10px 20px 12px;
+  margin: 5px 10px 5px 12px;
   display: inline-block;
   border-radius: 50%;
   border: 6px solid #43af49; }
@@ -636,8 +631,8 @@ a:active {
 .table {
   width: 235px;
   position: relative;
-  float: right;
-  bottom: 10px; }
+  margin-top: 2px;
+  float: right; }
 
 .table_text {
   font-size: 14px;
@@ -653,7 +648,7 @@ a:active {
   color: #fcc92f; }
 
 .container .event_h2 {
-  font-size: 17px;
+  font-size: 19px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   text-align: left;
@@ -680,6 +675,11 @@ a:active {
   position: relative;
   padding-left: 22px;
   margin-bottom: 10px; }
+
+.event_content {
+  width: 21.6875em;
+  height: 100%;
+  margin: 5px 0px 20px 0px; }
 
 .alerts {
   font-size: 15px;
@@ -787,7 +787,7 @@ a:active {
   float: right;
   display: inline-block;
   position: relative;
-  margin: 7px 6px 0px 6px;
+  margin: 14px 6px 13px 6px;
   right: 15px;
   border-radius: 50%;
   background-color: #6d5815; }
@@ -796,7 +796,7 @@ a:active {
   width: 21.6875em;
   height: 100%;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   background-color: #190d11;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8);
   margin-top: 7px;
@@ -806,7 +806,7 @@ a:active {
     margin: 0 auto;
     display: block;
     text-align: center;
-    font-size: 19px;
+    font-size: 21px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     padding: 15px 20px 40px 20px;
@@ -816,14 +816,14 @@ a:active {
     margin: 0 auto;
     display: block;
     text-align: center;
-    font-size: 19px;
+    font-size: 21px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     padding: 15px 55px 40px 55px;
     position: relative;
     color: #fcc92f; }
   .container h2 {
-    font-size: 17px;
+    font-size: 19px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-align: center;
@@ -873,14 +873,14 @@ a:active {
     margin: 0 auto;
     display: block;
     text-align: center;
-    font-size: 20px;
+    font-size: 23px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     padding: 15px 40px 40px 40px;
     position: relative;
     color: #1c1216; }
   .container_2 h2 {
-    font-size: 17px;
+    font-size: 19px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     text-align: center;
@@ -904,7 +904,7 @@ hr:after {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   background-color: #190d11;
-  font-size: 19px; }
+  font-size: 21px; }
 
 .container_void {
   width: 21.6875em;
@@ -915,7 +915,7 @@ hr:after {
     margin: 0 auto;
     display: block;
     text-align: center;
-    font-size: 20px;
+    font-size: 23px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     padding: 17px 60px 17px 60px;
@@ -1145,6 +1145,30 @@ hr:after {
   font-size: 34px;
   color: #fcc92f; }
 
+.rpicon-message {
+  margin-top: 10px;
+  margin-left: 6px;
+  position: relative;
+  text-decoration: none;
+  z-index: 99; }
+
+[class^="rpicon-message"]:before, [class*=" rpicon-message"]:before {
+  color: #190d11;
+  font-size: 30px;
+  line-height: 1.2 !important; }
+
+.rpicon-message-inv {
+  margin-top: 10px;
+  margin-left: 6px;
+  text-decoration: none !important;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-message-inv"]:before, [class*=" rpicon-message-inv"]:before {
+  color: #fcc92f;
+  font-size: 30px;
+  line-height: 1.2 !important; }
+
 .map {
   width: 21.6875em;
   margin: 0 auto;
@@ -1162,14 +1186,14 @@ canvas.mapboxgl-canvas {
   margin-top: 20px; }
 
 .map_people {
-  height: 50px; }
+  height: 60px; }
 
 #title_form {
   margin: 0 auto;
   margin-bottom: 10px;
   display: block;
   text-align: center;
-  font-size: 17px;
+  font-size: 19px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   padding: 20px 15px 15px 15px;
@@ -1181,7 +1205,7 @@ canvas.mapboxgl-canvas {
   margin-bottom: 10px;
   display: block;
   text-align: center;
-  font-size: 17px;
+  font-size: 19px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   padding: 20px 15px 15px 15px;
