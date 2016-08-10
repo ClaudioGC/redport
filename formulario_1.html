@@ -32,14 +32,18 @@
 
 		<h1 id="title_form">Indica tu estado</h1>
 		<div class="toggle_box">
-			 <div class="text_box">
-			<input type="checkbox" id="toggle_small_1" class="toggle_button_small"/>
+		<div class="text_box">
+			<input type="checkbox" id="toggle_small_1" class="toggle_button_small_2"/>
 			<label for="toggle_small_1" class="rpicon-toggle-small"><p class="texto-toggle">Herido</p></label>
 		</div>
-			<input type="checkbox" id="toggle_small_2" class="toggle_button_small"/>
+		<div class="text_box">
+			<input type="checkbox" id="toggle_small_2" class="toggle_button_small_2"/>
 			<label for="toggle_small_2" class="rpicon-toggle-small"><p class="texto-toggle">Atrapado</p></label>
-			<input type="checkbox" id="toggle_small_3" class="toggle_button_small"/>
+		</div>
+		<div class="text_box">
+			<input type="checkbox" id="toggle_small_3" class="toggle_button_small_2"/>
 			<label for="toggle_small_3" class="rpicon-toggle-small"><p class="texto-toggle">Enfermo&nbsp;crónico</p></label>
+		</div>
 		</div>
 	</div>
 
@@ -49,16 +53,22 @@
 
   	<h1 id="title_form">¿Están estas personas contigo?</h1>
 	<div class="toggle_box">
-    <input type="checkbox" id="toggle_small_4" class="toggle_button_small"/>
-  	<label for="toggle_small_4" class="rpicon-toggle-small"><p class="texto-toggle">nombre_apellido</p></label>
-		<input type="checkbox" id="toggle_small_5" class="toggle_button_small"/>
-  	<label for="toggle_small_5" class="rpicon-toggle-small"><p class="texto-toggle">nombre_apellido</p></label>
+		<div class="text_box_2">
+		    <input type="checkbox" id="toggle_small_4" class="toggle_button_small"/>
+		  	<label for="toggle_small_4" class="rpicon-toggle-small"><p class="texto-toggle">nombre_apellido</p></label>
+		 </div>
+		<div class="text_box_2">
+			<input type="checkbox" id="toggle_small_5" class="toggle_button_small"/>
+		  	<label for="toggle_small_5" class="rpicon-toggle-small"><p class="texto-toggle">nombre_apellido</p></label>
+		</div>
   </div>
 
   <h1 id="title_form">¿Están bien?</h1>
 	<div class="toggle_box">
-		<input type="checkbox" id="toggle_small_6" class="toggle_button_small"/>
-  	<label for="toggle_small_6" class="rpicon-toggle-small"><p class="texto-toggle">nombre_apellido</p></label>
+		<div class="text_box_2">
+			<input type="checkbox" id="toggle_small_6" class="toggle_button_small"/>	
+		  	<label for="toggle_small_6" class="rpicon-toggle-small"><p class="texto-toggle">nombre_apellido</p></label>
+		</div>
   </div>
 
     
@@ -67,13 +77,20 @@
 <div class="container">
 
   <h1 id="title_form">¿Hay otras personas contigo?</h1>
-  	<ul>
-		<li>nombre1</li>
-		<li>nombre2</li>
+  	<ul class="name_list">
+  		<div class="text_box_2">
+			<li>nombre1</li>
+		</div>
+		<div class="text_box_2">
+			<li>nombre2</li>
+		</div>
 	</ul>
+	<div class="toggle_box">
+	<div class="text_box_3">
 		<p id="text_button">Agregar otra persona</p>
-		<a href="#"><div class="button_small_two"><div class="rpicon-more"></div></div></a>
-
+		<a href="agregar_persona.html"><div class="button_small_two"><div class="rpicon-more"></div></div></a>
+	</div>
+</div>
 </div>
 
 <a class="button" href="home.html">Continuar</a>

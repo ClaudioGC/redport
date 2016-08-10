@@ -8,7 +8,7 @@
   <!--Estilos css (sass)-->
   <link rel='stylesheet' type='text/css' href='sass/main.css' />
   <!--Familia tipográfica Roboto (google fonts)-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel= 0"stylesheet">
   <!--familia de íconos-->
   <link href="https://file.myfontastic.com/KHbqgc9xxoCbZJYRdioaqd/icons.css" rel="stylesheet">
   <!--api de mapbox-->
@@ -24,31 +24,42 @@
   </div>
   </div>
 
-
+<section class="content">
 <div class="container">
-  <h1>Sismo de mayor intensidad</h1>
-<div class="number_box_red">
-  <p id="numero">7.5º</p>
+  <h1>Alerta roja por sismo</h1>
+  <div class="event_content">
+  <div class="number_box_red">
+    <p id="numero">7.5º</p>
+  </div>
+  <div class="table">
+      <table>
+        <tr>
+          <td class="celda"><p class="table_text">Fecha:</p></td>
+          <td><p class="table_text">10 Marzo 2016</p></td>
+        </tr>
+        <tr>
+          <td class="celda"><p class="table_text">Hora:</p></td>
+          <td><p class="table_text">21:30 pm</p></td>
+        </tr>
+        <tr>
+          <td class="celda"><p class="table_text">Lugar:</p></td>
+          <td><p class="table_text">Región de los Ríos</p></td>
+        </tr>
+        <tr>
+          <td class="celda"><p class="table_text">Intensidad:</p></td>
+          <td><p class="table_text">VII</p></td>
+        </tr>
+      </table>
+  </div>
 </div>
-<div class="table">
-    <table>
-      <tr>
-        <td class="celda"><p class="table_text">Fecha:</p></td>
-        <td><p class="table_text">10 Marzo 2016</p></td>
-      </tr>
-      <tr>
-        <td class="celda"><p class="table_text">Hora:</p></td>
-        <td><p class="table_text">21:30 pm</p></td>
-      </tr>
-      <tr>
-        <td class="celda"><p class="table_text">Lugar:</p></td>
-        <td><p class="table_text">Región de los Ríos</p></td>
-      </tr>
-      <tr>
-        <td class="celda"><p class="table_text">Intensidad:</p></td>
-        <td><p class="table_text">VII</p></td>
-      </tr>
-    </table>
+
+  <div class="effects">
+    <div class="effect">
+      <div class="rpicon-tsunami"></div>
+    </div>
+    <div class="effect">
+      <div class="rpicon-rupture-home"></div>
+    </div>
   </div>
 </div>
 
@@ -93,7 +104,7 @@
    </div>
 </div>
 
-
+</section>
 </div>
  </body>
 </html>

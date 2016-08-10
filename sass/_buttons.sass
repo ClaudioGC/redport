@@ -1,3 +1,4 @@
+	
 .button 
 
 	width: $ancho_btn_grande
@@ -10,23 +11,26 @@
 	padding-top: 24px
 	border-radius: 4px 
 	display: block
-	text-decoration: none
-	font-size: $texto_boton_grande
-	font-weight: $font_medium
-	font-family: $font-family
+	cursor: pointer
 	text-align: center
-
+	font-size: $texto_boton_grande
+	font-family: $font-family
 	color: $font-color_2
+	font-weight: $font_medium
+	text-decoration: none
+	box-shadow: 0 0 $on_color inset
 
 	&:active 
 
-		background-color: $on_color
-		transition: $transition_slow 
+		//background-color: $on_color
+		transition: $transition_fast
 		transform: scale(.98)
+		box-shadow: 200px 0 $on_color inset,-200px 0 $on_color inset 
+		
 
 a:active
 
-	color: $font-color
+	color: $font-color !important
 	text-shadow: 0.2px 0.8px 1px rgba(0, 0, 0, 0.8)
 
 .rpicon-more:active
@@ -44,6 +48,7 @@ a:active
 	width: 25px
 	height: 25px
 	z-index: 99
+	cursor: pointer
 
 
 .container_button
@@ -72,7 +77,7 @@ a:active
 	&:active 
 
 		background-color: $on_color
-		transition: $transition_slow 
+		transition: $transition_fast
 		transform: scale(.98)
 
 .button_two_event
@@ -97,7 +102,7 @@ a:active
 	&:active 
 
 		background-color: $on_color
-		transition: $transition_slow 
+		transition: $transition_fast 
 		transform: scale(.98)
 
 .button_two_map
@@ -123,25 +128,25 @@ a:active
 	&:active 
 
 		background-color: $on_color
-		transition: $transition_slow 
+		transition: $transition_fast
 		transform: scale(.98)
 
 
 .button_small_two
 
-	width: 40px
-	height: 25px
+	width: 45px
+	height: 30px
 	background: $small_button
 	border-radius: 4px
 	float: right
 	display: inline-block
-	margin: 12px
+	margin: 14px
 	margin-right: 11px
 
 	&:active 
 
 		background-color: $on_color
-		transition: $transition_slow 
+		transition: $transition_fast 
 		transform: scale(.98)
 
 
@@ -277,7 +282,7 @@ a:active
 				left: 0
 				content: "c" 
 
-//botón pequeño
+//botón pequeño 1
 
 .toggle_button_small
 
@@ -287,28 +292,28 @@ a:active
 
 	+ label
 
-		display: block
-		width: 55px
-		height: 21px
+		display: inline-block
+		width: 60px
+		height: 25px
 		border-radius: 4px
 		background: $off_color_2
 		@include right
-		margin-top: 25px
+		margin-top: 13px
 		margin-left: 277px
 
 
 
 		&:before
 		
-			display: block
+			display: inline-block
 			content: "c"
-			width: 30px	
-			height: 21px
+			width: 32px	
+			height: 25px
 			border-radius: 3px
 			background: $off_color
 			position: relative
 			transition: $transition
-			left: 25px
+			left: 27px
 
 	//apagado
 
@@ -323,11 +328,77 @@ a:active
 				left: 0
 				content: "b"
 
+//botón pequeño 2
+
+.toggle_button_small_2
+
+	display: none
+
+	//apagado
+
+	+ label
+
+		display: inline-block
+		width: 60px
+		height: 25px
+		border-radius: 4px
+		background: $on_color_2
+		@include right
+		margin-top: 13px
+		margin-left: 277px
+
+
+
+		&:before
+		
+			display: inline-block
+			content: "c"
+			width: 32px	
+			height: 25px
+			border-radius: 3px
+			background: $on_color
+			position: relative
+			transition: $transition
+			left: 27px
+
+	//apagado
+
+	&:checked
+
+		+ label
+			
+			background: $off_color_2
+
+			&:before
+				background: $off_color
+				left: 0
+				content: "b"
+
 .toggle_box
 	
 	display: block
 	width: 347px
-	padding-bottom: 20px
+	margin: 10px 0 10px 0
+	.text_box
+
+		width: 347px
+		background-color: #1c1216
+		height: 50px
+		margin-top: 5px
+
+	.text_box_2
+
+		width: 347px
+		background-color: $background_color_3
+		height: 50px
+		margin-top: 5px
+
+	.text_box_3
+
+		width: 347px
+		background-color: $background_color_3
+		height: 60px
+		margin-top: 5px
 
 	.texto-toggle
 
@@ -339,7 +410,7 @@ a:active
 		margin-left: 0px
 		color: $font-color
 		right: 243px
-		bottom: 38px
+		bottom: 40px
 
 .texto-checkbox
 
@@ -372,7 +443,7 @@ a:active
 		border-radius: 4px
 		background: $off_color
 		left: 10px
-		top: 20px
+		top: 14px
 		margin-right: 0px
 		margin-left: 300px
 
@@ -399,7 +470,22 @@ a:active
 
 
 
+.button_edit
 
+	width: 40px
+	height: 40px
+	background: $small_button
+	border-radius: 50%
+	float: right
+	display: inline-block
+	margin: 12px
+	margin-right: 11px
+	position: relative
+	z-index: 99
+	text-decoration: none
 
-	
+	&:active 
 
+		background-color: $on_color
+		transition: $transition_fast
+		transform: scale(.98)
