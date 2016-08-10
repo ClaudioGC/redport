@@ -7,7 +7,7 @@
   margin: 0 auto;
   background-color: #735968;
   display: block;
-  padding-bottom: 8px; }
+  padding-bottom: 5px; }
 
 body {
   margin: 0 auto;
@@ -274,17 +274,17 @@ a:active {
   display: inline-block;
   position: relative;
   float: right;
-  top: 20px;
-  margin-top: -3px;
-  margin-right: 7px;
+  top: 245px;
+  right: 7px;
+  margin-top: -4px;
   margin-bottom: -42px;
   z-index: 99;
-  font-size: 14px;
+  font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-align: center;
-  text-decoration: none;
-  color: #1c1216; }
+  color: #1c1216;
+  box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.8); }
   .button_two_map:active {
     background-color: #7a58dc;
     transition: all 0.2s cubic-bezier(0.22, 0.82, 1, 1);
@@ -318,6 +318,14 @@ a:active {
     text-align: center;
     text-decoration: none;
     color: #1c1216; }
+  .button_more .text_button_more {
+    font-size: 19px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #fcc92f;
+    padding-bottom: 0; }
 
 #text_button {
   display: inline-block;
@@ -444,17 +452,16 @@ a:active {
     width: 347px;
     background-color: #1c1216;
     height: 50px;
-    margin-top: 5px; }
+    margin-top: 4px; }
   .toggle_box .text_box_2 {
     width: 347px;
     background-color: #1c1216;
     height: 50px;
-    margin-top: 5px; }
+    margin-top: 4px; }
   .toggle_box .text_box_3 {
     width: 347px;
     background-color: #1c1216;
-    height: 60px;
-    margin-top: 5px; }
+    height: 60px; }
   .toggle_box .texto-toggle {
     font-size: 17px;
     font-family: "Roboto", sans-serif;
@@ -546,7 +553,7 @@ a:active {
   font-weight: 300;
   float: right;
   margin-right: 10px;
-  margin-top: 22px;
+  margin-top: 31px;
   color: #fcc92f; }
 
 .comment_box {
@@ -558,10 +565,7 @@ a:active {
   float: right; }
 
 .comment_content {
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px; }
+  padding-left: 10px; }
 
 .comment {
   font-size: 16px;
@@ -574,7 +578,7 @@ a:active {
   color: #fcc92f; }
 
 .container_report {
-  padding-top: 10px; }
+  padding-top: 1px; }
   .container_report li {
     margin-bottom: 15px;
     display: block;
@@ -617,7 +621,7 @@ a:active {
   background-color: #1c1216;
   position: relative;
   float: right;
-  margin-bottom: 5px; }
+  margin-bottom: 4px; }
 
 .user_avatar_2 {
   width: 46px;
@@ -673,6 +677,7 @@ a:active {
   width: 43px;
   height: 43px;
   border-radius: 4px;
+  border: 2px solid #fcc92f;
   background: #190d11;
   position: relative;
   margin-top: 30px;
@@ -686,6 +691,27 @@ a:active {
   padding: 40px 0px 10px 0px;
   height: 100%;
   width: 21.6875em; }
+
+.name_list {
+  margin: 0;
+  padding: 0; }
+  .name_list .list_box {
+    display: block;
+    width: 347px;
+    margin: 10px 0 10px 0; }
+    .name_list .list_box .text_box_2 {
+      width: 347px;
+      background-color: #1c1216;
+      height: 50px;
+      margin-top: 4px; }
+      .name_list .list_box .text_box_2 li {
+        font-size: 17px;
+        font-family: "Roboto", sans-serif;
+        display: inline-block;
+        position: relative;
+        list-style-type: none;
+        margin: 17px 0 17px 34px;
+        color: #fcc92f; }
 
 .container_event {
   padding: 17px 0px 0px 0px; }
@@ -892,7 +918,7 @@ a:active {
   margin: 14px 6px 13px 6px;
   right: 15px;
   border-radius: 50%;
-  background-color: #6d5815; }
+  border: 2px solid #fcc92f; }
 
 .container {
   width: 21.6875em;
@@ -929,7 +955,7 @@ a:active {
     font-weight: 300;
     text-align: center;
     letter-spacing: 0.2px;
-    padding-bottom: 15px;
+    margin: 23px 0px 23px 0px;
     color: #fcc92f; }
   .container h3 {
     margin: 0 auto;
@@ -948,18 +974,11 @@ a:active {
     font-family: "Roboto", sans-serif;
     position: relative;
     list-style-type: none;
-    margin-bottom: 19px;
+    margin: 17px 0 17px 0;
     color: #fcc92f; }
   .container .form_content {
     display: none;
     background-color: #2b1d25; }
-  .container .lista_form {
-    display: inline-block;
-    width: 200px;
-    padding-left: 30px; }
-  .container .names_box {
-    position: relative;
-    display: block; }
 
 .container_2 {
   width: 21.6875em;
@@ -1194,8 +1213,8 @@ hr:after {
   font-size: 50px; }
 
 .rpicon-tsunami {
-  margin-top: 6px;
-  margin-left: 3px;
+  margin-top: 3px;
+  margin-left: 1px;
   position: relative;
   z-index: 99; }
 
@@ -1205,8 +1224,8 @@ hr:after {
   font-size: 46px; }
 
 .rpicon-rupture-home {
-  margin-top: 5px;
-  margin-left: 4px;
+  margin-top: 3px;
+  margin-left: 2px;
   position: relative;
   z-index: 99; }
 
@@ -1216,8 +1235,8 @@ hr:after {
   font-size: 40px; }
 
 .rpicon-chronic-patient {
-  margin-top: 6px;
-  margin-left: 6px;
+  margin-top: 5px;
+  margin-left: 3px;
   position: absolute;
   text-decoration: none;
   z-index: 99; }
@@ -1227,8 +1246,8 @@ hr:after {
   color: #fcc92f; }
 
 .rpicon-trapped {
-  margin-top: 6px;
-  margin-left: 4px;
+  margin-top: 4px;
+  margin-left: 2px;
   position: absolute;
   text-decoration: none;
   z-index: 99; }
@@ -1238,8 +1257,8 @@ hr:after {
   color: #fcc92f; }
 
 .rpicon-injured {
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: 4px;
+  margin-left: 3px;
   position: absolute;
   text-decoration: none;
   z-index: 99; }
