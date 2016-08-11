@@ -50,7 +50,7 @@ body {
     font-size: 26px;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
-    padding: 15px 15px 10px 15px;
+    padding: 7px 15px 10px 15px !important;
     position: relative;
     color: #1c1216; }
   .header a {
@@ -309,7 +309,7 @@ a:active {
   float: right; }
 
 .button_more {
-  width: 200px;
+  width: 300px;
   margin: 0 auto;
   height: 60px;
   text-align: center;
@@ -322,9 +322,10 @@ a:active {
     color: #1c1216;
     font-size: 20px;
     font-family: "Roboto", sans-serif;
-    letter-spacing: 0.2px;
+    letter-spacing: 1px;
     color: #fcc92f;
-    padding-bottom: 0; }
+    padding-bottom: 3px;
+    border-bottom: 1px solid #fcc92f; }
 
 #text_button {
   display: inline-block;
@@ -727,13 +728,13 @@ a:active {
   border-radius: 50%;
   border: 6px solid #f71138; }
 
-.number_box_orange {
+.number_box_yellow {
   width: 90px;
   height: 90px;
   margin: 5px 10px 5px 12px;
   display: inline-block;
   border-radius: 50%;
-  border: 6px solid #f17928; }
+  border: 6px solid #fcc92f; }
 
 .number_box_green {
   width: 90px;
@@ -741,7 +742,7 @@ a:active {
   margin: 5px 10px 5px 12px;
   display: inline-block;
   border-radius: 50%;
-  border: 6px solid #7a58dc; }
+  border: 6px solid #41ab4b; }
 
 #numero {
   font-size: 24px;
@@ -1009,7 +1010,7 @@ a:active {
     text-align: center;
     letter-spacing: 0.2px;
     margin-top: 10px;
-    padding-bottom: 25px;
+    padding: 10px 5px 10px 5px;
     color: #1c1216; }
 
 hr {
@@ -1065,8 +1066,8 @@ hr:after {
 [class^="rpicon-back"]:before, [class*=" rpicon-back"]:before {
   position: relative;
   color: #190d11;
-  font-size: 21px;
-  line-height: 1.2 !important; }
+  font-size: 26px;
+  line-height: 1 !important; }
 
 .rpicon-back {
   margin: 0;
@@ -1300,11 +1301,11 @@ hr:after {
 [class^="rpicon-down"]:before, [class*=" rpicon-down"]:before {
   position: relative;
   color: #fcc92f;
-  font-size: 21px;
+  font-size: 17px;
   line-height: 1 !important; }
 
 .rpicon-down {
-  padding-top: 5px; }
+  padding-top: 7px; }
 
 .map {
   width: 21.6875em;
