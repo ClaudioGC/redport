@@ -83,7 +83,7 @@ body {
   margin-bottom: 10px;
   display: block;
   text-align: center;
-  font-size: 19px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   padding: 20px 15px 15px 15px;
@@ -291,13 +291,13 @@ a:active {
     transform: scale(0.98); }
 
 .button_small_two {
-  width: 45px;
-  height: 30px;
+  width: 47px;
+  height: 32px;
   background: #fcc92f;
   border-radius: 4px;
   float: right;
   display: inline-block;
-  margin: 14px;
+  margin: 16px;
   margin-right: 11px; }
   .button_small_two:active {
     background-color: #7a58dc;
@@ -318,7 +318,7 @@ a:active {
     text-align: center;
     text-decoration: none;
     color: #1c1216;
-    font-size: 19px;
+    font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-align: center;
@@ -328,7 +328,8 @@ a:active {
 
 #text_button {
   display: inline-block;
-  position: relative; }
+  position: relative;
+  top: 5px; }
 
 .toggle_button_big {
   display: none; }
@@ -395,7 +396,7 @@ a:active {
     background: #a00f27;
     margin-right: 0;
     left: 295px;
-    margin-top: 13px;
+    margin-top: 18px;
     margin-left: 277px; }
     .toggle_button_small + label:before {
       display: inline-block;
@@ -424,7 +425,7 @@ a:active {
     background: #4b3884;
     margin-right: 0;
     left: 295px;
-    margin-top: 13px;
+    margin-top: 18px;
     margin-left: 277px; }
     .toggle_button_small_2 + label:before {
       display: inline-block;
@@ -450,17 +451,17 @@ a:active {
   .toggle_box .text_box {
     width: 347px;
     background-color: #1c1216;
-    height: 50px;
+    height: 60px;
     margin-top: 4px; }
   .toggle_box .text_box_2 {
     width: 347px;
     background-color: #1c1216;
-    height: 50px;
+    height: 60px;
     margin-top: 4px; }
   .toggle_box .text_box_3 {
     width: 347px;
     background-color: #1c1216;
-    height: 60px; }
+    height: 65px; }
   .toggle_box .texto-toggle {
     font-size: 17px;
     font-family: "Roboto", sans-serif;
@@ -535,7 +536,7 @@ a:active {
   float: left; }
 
 .username #name {
-  font-size: 19px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   letter-spacing: 0.2px;
@@ -701,7 +702,7 @@ a:active {
     .name_list .list_box .text_box_2 {
       width: 347px;
       background-color: #1c1216;
-      height: 50px;
+      height: 60px;
       margin-top: 4px; }
       .name_list .list_box .text_box_2 li {
         font-size: 17px;
@@ -709,7 +710,7 @@ a:active {
         display: inline-block;
         position: relative;
         list-style-type: none;
-        margin: 17px 0 17px 34px;
+        margin: 18px 0 17px 34px;
         color: #fcc92f; }
 
 .container_event {
@@ -774,7 +775,7 @@ a:active {
   color: #fcc92f; }
 
 .container .event_h2 {
-  font-size: 19px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   text-align: left;
@@ -932,7 +933,7 @@ a:active {
     margin: 0 auto;
     display: block;
     text-align: center;
-    font-size: 21px;
+    font-size: 22px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     padding: 15px 20px 40px 20px;
@@ -942,14 +943,14 @@ a:active {
     margin: 0 auto;
     display: block;
     text-align: center;
-    font-size: 21px;
+    font-size: 22px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     padding: 15px 55px 40px 55px;
     position: relative;
     color: #fcc92f; }
   .container h2 {
-    font-size: 19px;
+    font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-align: center;
@@ -1000,7 +1001,7 @@ a:active {
     position: relative;
     color: #1c1216; }
   .container_2 h2 {
-    font-size: 19px;
+    font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     text-align: center;
@@ -1024,7 +1025,7 @@ hr:after {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   background-color: #190d11;
-  font-size: 21px; }
+  font-size: 22px; }
 
 .container_void {
   width: 21.6875em;
@@ -1107,7 +1108,7 @@ hr:after {
 [class^="rpicon-more"]:before, [class*=" rpicon-more"]:before {
   position: relative;
   color: #190d11;
-  font-size: 14px;
+  font-size: 15px;
   bottom: 1px;
   line-height: 2.3 !important; }
 
@@ -1318,7 +1319,7 @@ canvas.mapboxgl-canvas {
   margin-bottom: 10px;
   display: block;
   text-align: center;
-  font-size: 19px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   padding: 20px 15px 15px 15px;
@@ -1330,7 +1331,7 @@ canvas.mapboxgl-canvas {
   margin-bottom: 10px;
   display: block;
   text-align: center;
-  font-size: 19px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   padding: 20px 15px 15px 15px;
