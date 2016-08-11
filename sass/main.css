@@ -311,17 +311,17 @@ a:active {
 .button_more {
   width: 200px;
   margin: 0 auto;
-  height: 30px; }
+  height: 60px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
   .button_more .text_button_more {
     font-size: 11px;
-    font-family: "Roboto", sans-serif;
     text-align: center;
     text-decoration: none;
     color: #1c1216;
     font-size: 20px;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    text-align: center;
     letter-spacing: 0.2px;
     color: #fcc92f;
     padding-bottom: 0; }
@@ -710,7 +710,7 @@ a:active {
         display: inline-block;
         position: relative;
         list-style-type: none;
-        margin: 18px 0 17px 34px;
+        margin: 17px 0 17px 34px;
         color: #fcc92f; }
 
 .container_event {
@@ -907,7 +907,9 @@ a:active {
 
 .effects {
   display: block;
-  height: 80px; }
+  height: 80px;
+  background-color: #1c1216;
+  margin-bottom: 5px; }
 
 .effect {
   width: 50px;
@@ -1294,6 +1296,15 @@ hr:after {
   color: #fcc92f;
   font-size: 30px;
   line-height: 1.2 !important; }
+
+[class^="rpicon-down"]:before, [class*=" rpicon-down"]:before {
+  position: relative;
+  color: #fcc92f;
+  font-size: 21px;
+  line-height: 1 !important; }
+
+.rpicon-down {
+  padding-top: 5px; }
 
 .map {
   width: 21.6875em;
