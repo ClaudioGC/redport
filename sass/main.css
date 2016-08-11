@@ -198,7 +198,7 @@ body {
   text-decoration: none;
   box-shadow: 0 0 #7a58dc inset; }
   .button:active {
-    transition: all 0.2s cubic-bezier(0.22, 0.82, 1, 1);
+    transition: all 0.1s cubic-bezier(0.22, 0.82, 1, 1);
     transform: scale(0.98);
     box-shadow: 200px 0 #7a58dc inset, -200px 0 #7a58dc inset; }
 
@@ -242,7 +242,7 @@ a:active {
   color: #1c1216; }
   .button_two:active {
     background-color: #7a58dc;
-    transition: all 0.2s cubic-bezier(0.22, 0.82, 1, 1);
+    transition: all 0.1s cubic-bezier(0.22, 0.82, 1, 1);
     transform: scale(0.98); }
 
 .button_two_event {
@@ -264,7 +264,7 @@ a:active {
   color: #1c1216; }
   .button_two_event:active {
     background-color: #7a58dc;
-    transition: all 0.2s cubic-bezier(0.22, 0.82, 1, 1);
+    transition: all 0.1s cubic-bezier(0.22, 0.82, 1, 1);
     transform: scale(0.98); }
 
 .button_two_map {
@@ -287,7 +287,7 @@ a:active {
   box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.8); }
   .button_two_map:active {
     background-color: #7a58dc;
-    transition: all 0.2s cubic-bezier(0.22, 0.82, 1, 1);
+    transition: all 0.1s cubic-bezier(0.22, 0.82, 1, 1);
     transform: scale(0.98); }
 
 .button_small_two {
@@ -301,7 +301,7 @@ a:active {
   margin-right: 11px; }
   .button_small_two:active {
     background-color: #7a58dc;
-    transition: all 0.2s cubic-bezier(0.22, 0.82, 1, 1);
+    transition: all 0.1s cubic-bezier(0.22, 0.82, 1, 1);
     transform: scale(0.98); }
 
 #button_small_two {
@@ -312,13 +312,12 @@ a:active {
   width: 200px;
   margin: 0 auto;
   height: 30px; }
-  .button_more a {
+  .button_more .text_button_more {
     font-size: 11px;
     font-family: "Roboto", sans-serif;
     text-align: center;
     text-decoration: none;
-    color: #1c1216; }
-  .button_more .text_button_more {
+    color: #1c1216;
     font-size: 19px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -519,7 +518,7 @@ a:active {
   text-decoration: none; }
   .button_edit:active {
     background-color: #7a58dc;
-    transition: all 0.2s cubic-bezier(0.22, 0.82, 1, 1);
+    transition: all 0.1s cubic-bezier(0.22, 0.82, 1, 1);
     transform: scale(0.98); }
 
 #reports_list {
@@ -1066,6 +1065,10 @@ hr:after {
   font-size: 21px;
   line-height: 1.2 !important; }
 
+.rpicon-back {
+  margin: 0;
+  padding: 0; }
+
 [class^="rpicon-home"]:before, [class*=" rpicon-home"]:before {
   position: relative;
   color: #fcc92f;
@@ -1268,7 +1271,7 @@ hr:after {
   color: #fcc92f; }
 
 .rpicon-message {
-  margin-top: 10px;
+  margin-top: 6px;
   margin-left: 6px;
   position: relative;
   text-decoration: none;
@@ -1276,7 +1279,7 @@ hr:after {
 
 [class^="rpicon-message"]:before, [class*=" rpicon-message"]:before {
   color: #190d11;
-  font-size: 30px;
+  font-size: 35px;
   line-height: 1.2 !important; }
 
 .rpicon-message-inv {
