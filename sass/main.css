@@ -122,12 +122,12 @@ body {
     display: inline-block;
     list-style-type: none;
     padding: 16px 20px 18px 21px;
-    margin-left: 10px;
+    margin-left: 11px;
     margin-right: 10px;
     color: #190d11; }
 
 .input_rut {
-  text-align: center; }
+  text-align: left; }
 
 .label_rut {
   font-size: 17px;
@@ -135,9 +135,19 @@ body {
   font-weight: 400;
   text-align: left;
   letter-spacing: 0.2px;
-  padding-bottom: 0px;
   position: relative;
-  right: 120px;
+  left: 25px;
+  color: #fcc92f; }
+
+.label_rut_2 {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.2px;
+  position: relative;
+  top: 19px;
+  left: 25px;
   color: #fcc92f; }
 
 .login-rut {
@@ -148,7 +158,7 @@ body {
 .login-rut_2 {
   width: 330px;
   margin: 0 auto;
-  padding: 5px 0 20px 0; }
+  padding: 30px 0 20px 0; }
 
 .login-rut__box {
   display: block;
@@ -158,7 +168,7 @@ body {
   border: 1px solid #fcc92f;
   line-height: 3;
   padding-left: 19px;
-  color: #2b1d25;
+  color: #fcc92f;
   background-color: #1c1216;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
