@@ -121,7 +121,7 @@ body {
     position: relative;
     display: inline-block;
     list-style-type: none;
-    padding: 16px 20px 18px 21px;
+    padding: 16px 20px 18px 20px;
     margin-left: 11px;
     margin-right: 10px;
     color: #190d11; }
@@ -444,7 +444,7 @@ a:active {
       transition: all 0.3s ease;
       left: 0; }
   .toggle_button_big:checked + label {
-    background: #7a58dc; }
+    background: #41ab4b; }
     .toggle_button_big:checked + label:before {
       left: 150px; }
 
@@ -456,7 +456,7 @@ a:active {
     width: 280px;
     height: 50px;
     border-radius: 4px;
-    background: #4b3884;
+    background: #2c7333;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px; }
@@ -466,7 +466,7 @@ a:active {
       width: 130px;
       height: 50px;
       border-radius: 4px;
-      background: #7a58dc;
+      background: #41ab4b;
       position: relative;
       transition: all 0.3s ease;
       left: 150px; }
@@ -500,9 +500,9 @@ a:active {
       transition: all 0.3s ease;
       left: 27px; }
   .toggle_button_small:checked + label {
-    background: #4b3884; }
+    background: #2c7333; }
     .toggle_button_small:checked + label:before {
-      background: #7a58dc;
+      background: #41ab4b;
       left: 0;
       content: "b"; }
 
@@ -513,7 +513,7 @@ a:active {
     width: 60px;
     height: 25px;
     border-radius: 4px;
-    background: #4b3884;
+    background: #2c7333;
     margin-right: 0;
     left: 295px;
     margin-top: 18px;
@@ -524,7 +524,7 @@ a:active {
       width: 32px;
       height: 25px;
       border-radius: 3px;
-      background: #7a58dc;
+      background: #41ab4b;
       position: relative;
       transition: all 0.3s ease;
       left: 27px; }
@@ -562,7 +562,7 @@ a:active {
       display: inline-block;
       content: ""; }
   .checkbox_button_small:checked + label {
-    background: #7a58dc;
+    background: #41ab4b;
     transition: all 0.3s ease; }
     .checkbox_button_small:checked + label:before {
       left: 0;
@@ -1029,7 +1029,7 @@ a:active {
     font-size: 22px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    padding: 15px 20px 40px 20px;
+    padding: 20px 20px 30px 20px;
     position: relative;
     color: #fcc92f; }
   .container .title-icon {
@@ -1177,6 +1177,7 @@ hr:after {
   position: relative;
   color: #fcc92f;
   font-size: 25px;
+  text-shadow: 0.6px 0.8px 1px #3e3e3e;
   line-height: 2.1 !important;
   text-align: center; }
 
@@ -1184,6 +1185,7 @@ hr:after {
   position: relative;
   color: #fcc92f;
   font-size: 11px;
+  text-shadow: 0.6px 0.8px 1px #3e3e3e;
   text-align: center;
   line-height: 2.6 !important; }
 
@@ -1191,6 +1193,7 @@ hr:after {
   color: #fcc92f;
   font-size: 12px;
   line-height: 1.4 !important;
+  text-shadow: 0.6px 0.8px 1px #3e3e3e;
   text-align: center;
   padding-left: 9px;
   top: 3px; }
