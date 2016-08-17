@@ -25,7 +25,8 @@
 		//background-color: $on_color
 		transition: $transition_fast
 		transform: scale(.98)
-		box-shadow: 200px 0 $on_color inset,-200px 0 $on_color inset 
+		background-color: $on_color
+		box-shadow: 0 5px $on_color_2
 		
 
 a:active
@@ -54,6 +55,35 @@ a:active
 .container_button
 	
 	height: 60px
+
+.button_rut
+
+	width: $ancho_btn_rut
+	height: 60px
+	margin: 0 auto
+	background-color: $button_color
+	box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8)
+	margin-top: 6px
+	margin-bottom: 4px
+	padding-top: 20px
+	border-radius: 4px 
+	display: block
+	cursor: pointer
+	text-align: center
+	font-size: $texto_boton_grande
+	font-family: $font-family
+	color: $font-color_2
+	font-weight: $font_medium
+	text-decoration: none
+	box-shadow: 0 0 $on_color inset
+
+	&:active 
+
+		//background-color: $on_color
+		transition: $transition_fast
+		transform: scale(.98)
+		background-color: $on_color
+		box-shadow: 0 5px $on_color_2
 
 .button_two 
 
@@ -394,42 +424,7 @@ a:active
 				left: 0
 				content: "b"
 
-.toggle_box
-	
-	display: block
-	width: 347px
-	margin: 10px 0 10px 0
-	.text_box
 
-		width: 347px
-		background-color: #1c1216
-		height: 60px
-		margin-top: 4px
-
-	.text_box_2
-
-		width: 347px
-		background-color: $background_color_3
-		height: 60px
-		margin-top: 4px
-
-	.text_box_3
-
-		width: 347px
-		background-color: $background_color_3
-		height: 65px
-
-	.texto-toggle
-
-
-		font-size: $texto_contenido
-		font-family: $font-family
-		position: relative 
-		padding-left: 0px
-		margin-left: 0px
-		color: $font-color
-		right: 243px
-		bottom: 40px
 
 .texto-checkbox
 
