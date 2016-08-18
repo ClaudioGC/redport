@@ -404,13 +404,15 @@ a:active {
   height: 60px;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  padding-top: 8px;
+  margin-bottom: 5px; }
   .button_more .text_button_more {
     font-size: 11px;
     text-align: center;
     text-decoration: none;
     color: #1c1216;
-    font-size: 20px;
+    font-size: 19px;
     font-family: "Roboto", sans-serif;
     letter-spacing: 1px;
     color: #fcc92f;
@@ -441,7 +443,7 @@ a:active {
       border-radius: 4px;
       background: #f71138;
       position: relative;
-      transition: all 0.3s ease;
+      transition: all 0.3s cubic-bezier(0.25, 0.1, 0.54, 0.59);
       left: 0; }
   .toggle_button_big:checked + label {
     background: #41ab4b; }
@@ -468,7 +470,7 @@ a:active {
       border-radius: 4px;
       background: #41ab4b;
       position: relative;
-      transition: all 0.3s ease;
+      transition: all 0.3s cubic-bezier(0.25, 0.1, 0.54, 0.59);
       left: 150px; }
   .toggle_button_big:checked + label {
     background: #a00f27; }
@@ -497,7 +499,7 @@ a:active {
       border-radius: 3px;
       background: #f71138;
       position: relative;
-      transition: all 0.3s ease;
+      transition: all 0.3s cubic-bezier(0.25, 0.1, 0.54, 0.59);
       left: 27px; }
   .toggle_button_small:checked + label {
     background: #2c7333; }
@@ -526,7 +528,7 @@ a:active {
       border-radius: 3px;
       background: #41ab4b;
       position: relative;
-      transition: all 0.3s ease;
+      transition: all 0.3s cubic-bezier(0.25, 0.1, 0.54, 0.59);
       left: 27px; }
   .toggle_button_small_2:checked + label {
     background: #a00f27; }
@@ -542,7 +544,7 @@ a:active {
   padding-left: 0px;
   margin-left: 0px;
   color: #fcc92f;
-  right: 285px;
+  right: 276px;
   bottom: 35px; }
 
 .checkbox_button_small {
@@ -554,7 +556,7 @@ a:active {
     height: 21px;
     border-radius: 4px;
     background: #f71138;
-    left: 10px;
+    left: 5px;
     top: 14px;
     margin-right: 0px;
     margin-left: 300px; }
@@ -563,7 +565,7 @@ a:active {
       content: ""; }
   .checkbox_button_small:checked + label {
     background: #41ab4b;
-    transition: all 0.3s ease; }
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.54, 0.59); }
     .checkbox_button_small:checked + label:before {
       left: 0;
       content: "b"; }
@@ -586,7 +588,10 @@ a:active {
     transform: scale(0.98); }
 
 #reports_list {
-  padding-left: 5px; }
+  margin-top: 0px;
+  margin-bottom: -1px;
+  padding-left: 5px;
+  background-color: #2b1d25; }
 
 .user_avatar {
   width: 47px;
@@ -594,7 +599,8 @@ a:active {
   border-radius: 50%;
   background: #4a3a42;
   position: relative;
-  margin-left: 2px;
+  margin-left: 5px;
+  margin-top: 15px;
   z-index: 98;
   float: left; }
 
@@ -603,26 +609,23 @@ a:active {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   letter-spacing: 0.2px;
-  margin-right: 10px;
-  padding-bottom: 0;
-  padding-left: 10px;
+  margin: 10px 0 5px 10px;
   text-align: left;
   display: inline-block;
   color: #fcc92f; }
 
 .comment_date {
-  font-size: 12px;
+  font-size: 13px;
   display: inline-block;
   font-weight: 300;
   float: right;
   margin-right: 10px;
-  margin-top: 31px;
+  margin-top: 17px;
   color: #fcc92f; }
 
 .comment_box {
   width: 275px;
   margin-right: 10px;
-  border: 1px solid;
   border-radius: 4px;
   position: relative;
   float: right; }
@@ -638,22 +641,24 @@ a:active {
   text-align: left;
   padding-left: 0px;
   padding-right: 0px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   color: #fcc92f; }
 
-.container_report {
-  padding-top: 1px; }
-  .container_report li {
-    margin-bottom: 15px;
-    display: block;
-    position: relative;
-    color: #fcc92f; }
-  .container_report li:after {
-    content: "";
-    display: block;
-    clear: both;
-    height: 0;
-    width: 0;
-    color: #fcc92f; }
+.container_report li {
+  margin-bottom: 15px;
+  display: block;
+  position: relative;
+  color: #fcc92f;
+  margin: 5px 0 5px 0 !important;
+  padding: 15px 0 15px 0; }
+.container_report li:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  width: 0;
+  color: #fcc92f; }
 
 .usuario_personal {
   width: 70px;
@@ -1050,6 +1055,14 @@ a:active {
     letter-spacing: 0.2px;
     margin: 23px 0px 23px 0px;
     color: #fcc92f; }
+  .container .texto_vivienda {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin: 0px 0px 35px 0px;
+    color: #fcc92f; }
   .container h3 {
     margin: 0 auto;
     display: block;
@@ -1089,7 +1102,7 @@ a:active {
     text-align: left;
     font-size: 27px;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     padding: 28px 12px 0px 27px;
     position: relative;
     color: #fcc92f; }
@@ -1167,7 +1180,7 @@ hr:after {
   position: relative;
   color: #fcc92f;
   font-size: 55px;
-  line-height: 1.2 !important; }
+  line-height: 1 !important; }
 
 .home-icon-container {
   display: block;
