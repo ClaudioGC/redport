@@ -21,20 +21,20 @@
    <!-- ======= header======= -->
   <div class="header">
     <div class="back-button"><a href="formulario_1.html"><div class="rpicon-back"></div></a></div>
-    <div class="title_header"><h1>Nombre persona</h1></div>
+    <div class="title_header"><h1>Gloria Aracena</h1></div>
     <div class="message-button"><a href="mensajes.html"><div class="rpicon-message"></div></a></div>
     
     <div class="navbar">
       <ul class="navbar_content">
         <a href="#" class="navbar-button"><li>Inicio</li></a>
-        <a href="" class="navbar-button"><li>Reportar</li></a>
-        <a href="reportar_entorno.html" class="navbar-button"><li>Entorno</li></a>
+        <a href="reportar.html" class="navbar-button"><li>Reportar</li></a>
+        <a href="reportar_entorno.html" class="navbar-button"><li>Reportar<br>entorno</li>
       </ul>
     </div>
   </div>
 <div class="container_search">
     <form action="">
-      <a href="#" class="rpicon-search"></a>
+      <a href="resultados_busqueda.html" class="rpicon-search"></a>
       <input class="input_search" type="text" placeholder="Buscar a alguien" id="search_1">
       <label for="search_1"></label>
     </form>
@@ -108,7 +108,10 @@
 </div>
 
 <div class="container">
-
+   <div class="map_people">
+     <p id="texto_mapa">100 personas reportadas</p>
+     <a class="button_two" href="personas_reportadas.html">ver más</a>
+   </div>
    <div class="map">
       
       <!--<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3345.0698151437036!2d-71.58095672261143!3d-33.02829109958188!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1468279338455" width="347" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>-->
@@ -127,10 +130,6 @@
         });
         </script>
 
-   </div>
-   <div class="map_people">
-     <p id="texto_mapa">100 personas reportadas</p>
-     <a class="button_two" href="personas_reportadas.html">ver más</a>
    </div>
 </div>
 
@@ -182,9 +181,9 @@
 
   <div class="container">
     <a class="button_edit" href="estado_hogar.html"><div class="rpicon-edit"></div></a>
-    <div class="edit_title"><h1 class="title-icon">Vivienda</h1></div>
+    <div class="edit_title"><h1 class="title-icon">Estado de mi hogar</h1></div>
     <div class="home-icon-container"><div class="rpicon-home"></div></div>
-    <h2 class="texto_vivienda">casa</h2>
+    <h2 class="texto_vivienda">Casa</h2>
 
   <ul class="name_list">
     <div class="list_box">
@@ -201,7 +200,7 @@
   </ul>
   </div>
 
-  <div class="container">
+  <div class="container" id="reportes">
     <h1>Últimos reportes</h1>
 
 <!-- caja de comentarios -->

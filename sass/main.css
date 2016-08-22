@@ -8,7 +8,7 @@
   background-color: #735968;
   display: block;
   padding-bottom: 5px;
-  padding-top: 119px; }
+  padding-top: 127px; }
 
 .pagina_esp {
   width: 22.5em;
@@ -113,7 +113,7 @@ body {
   margin-bottom: 0px;
   border-top: 1px solid #190d11; }
   .navbar_content .navbar-button:focus {
-    padding-bottom: 16px;
+    padding-bottom: 22px;
     border-bottom: 5px solid #7a58dc; }
   .navbar_content li {
     font-size: 17px;
@@ -121,10 +121,11 @@ body {
     position: relative;
     display: inline-block;
     list-style-type: none;
-    padding: 16px 20px 18px 20px;
-    margin-left: 11px;
-    margin-right: 10px;
-    color: #190d11; }
+    padding: 10px 26px 10px 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #190d11;
+    vertical-align: middle; }
 
 .input_rut {
   text-align: left; }
@@ -193,6 +194,13 @@ body {
 input:focus {
   background-color: #4b3884; }
 
+.form-report_2 {
+  width: 330px;
+  height: 270px;
+  margin: 0 auto;
+  padding: 5px 0 0px 0;
+  margin-bottom: 2px; }
+
 .form-report {
   width: 330px;
   margin: 0 auto;
@@ -216,7 +224,7 @@ input:focus {
 .description__box {
   display: block;
   width: 100%;
-  height: 100px;
+  height: 257px;
   border-radius: 4px;
   border: 1px solid #fcc92f;
   line-height: 1;
@@ -239,7 +247,7 @@ input:focus {
 .description_form_input {
   display: inline-block;
   position: relative;
-  bottom: 150px;
+  bottom: 275px;
   margin-left: 14px; }
 
 .button {
@@ -296,12 +304,12 @@ a:active {
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8);
   margin-top: 6px;
   margin-bottom: 4px;
-  padding-top: 20px;
+  padding-top: 18px;
   border-radius: 4px;
   display: block;
   cursor: pointer;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   font-family: "Roboto", sans-serif;
   color: #1c1216;
   font-weight: 500;
@@ -428,7 +436,7 @@ a:active {
   display: none; }
   .toggle_button_big + label {
     display: block;
-    width: 280px;
+    width: 260px;
     height: 50px;
     border-radius: 4px;
     background: #a00f27;
@@ -448,14 +456,14 @@ a:active {
   .toggle_button_big:checked + label {
     background: #41ab4b; }
     .toggle_button_big:checked + label:before {
-      left: 150px; }
+      left: 130px; }
 
 .toggle_button_big {
   display: none;
   font-size: 25px; }
   .toggle_button_big + label {
     display: block;
-    width: 280px;
+    width: 260px;
     height: 50px;
     border-radius: 4px;
     background: #2c7333;
@@ -471,7 +479,7 @@ a:active {
       background: #41ab4b;
       position: relative;
       transition: all 0.3s cubic-bezier(0.25, 0.1, 0.54, 0.59);
-      left: 150px; }
+      left: 130px; }
   .toggle_button_big:checked + label {
     background: #a00f27; }
     .toggle_button_big:checked + label:before {
@@ -802,6 +810,7 @@ a:active {
   .toggle_box .texto-toggle {
     font-size: 17px;
     font-family: "Roboto", sans-serif;
+    width: 235px;
     position: relative;
     padding-left: 0px;
     margin-left: 0px;
@@ -1103,7 +1112,7 @@ a:active {
     font-size: 27px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    padding: 28px 12px 0px 27px;
+    padding: 28px 12px 10px 27px;
     position: relative;
     color: #fcc92f; }
   .container_2 p {
@@ -1160,6 +1169,34 @@ hr:after {
   margin-top: 8px;
   border-radius: 4px;
   display: block; }
+
+.container_results {
+  width: 21.6875em;
+  height: 412px;
+  margin: 0 auto;
+  background-color: #190d11;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8);
+  margin-top: 7px;
+  border-radius: 4px;
+  display: block; }
+  .container_results h1 {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    padding: 20px 20px 30px 20px;
+    position: relative;
+    color: #fcc92f; }
+  .container_results h2 {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin: 23px 0px 23px 0px;
+    color: #fcc92f; }
 
 [class^="rpicon-"]:before, [class*=" rpicon-"]:before {
   position: relative;
