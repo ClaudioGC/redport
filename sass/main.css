@@ -118,10 +118,11 @@ body {
   .navbar_content li {
     font-size: 17px;
     font-family: "Roboto", sans-serif;
+    text-align: center;
     position: relative;
     display: inline-block;
     list-style-type: none;
-    padding: 10px 26px 10px 24px;
+    padding: 10px 15px 10px 24px;
     margin-left: 5px;
     margin-right: 5px;
     color: #190d11;
@@ -196,7 +197,7 @@ input:focus {
 
 .form-report_2 {
   width: 330px;
-  height: 270px;
+  height: 342px;
   margin: 0 auto;
   padding: 5px 0 0px 0;
   margin-bottom: 2px; }
@@ -372,7 +373,7 @@ a:active {
   display: inline-block;
   position: relative;
   float: right;
-  top: 245px;
+  top: 200px;
   right: 7px;
   margin-top: -4px;
   margin-bottom: -42px;
@@ -1172,7 +1173,7 @@ hr:after {
 
 .container_results {
   width: 21.6875em;
-  height: 412px;
+  height: 485px;
   margin: 0 auto;
   background-color: #190d11;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8);
@@ -1195,14 +1196,30 @@ hr:after {
     font-weight: 300;
     text-align: center;
     letter-spacing: 0.2px;
-    margin: 23px 0px 23px 0px;
+    margin: 0px 0px 23px 0px;
+    color: #fcc92f; }
+  .container_results p {
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0.8px;
+    margin-top: 8px;
+    padding: 1px 34px 11px 26px;
     color: #fcc92f; }
   .container_results .search_message {
     margin-top: 192px;
     margin-bottom: 17px;
     padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 5px;
     background-color: #2b1d25; }
+  .container_results .go-button {
+    float: right;
+    display: inline-block;
+    margin: -78px 13px 0px 0px; }
+    .container_results .go-button a {
+      text-decoration: none; }
 
 [class^="rpicon-"]:before, [class*=" rpicon-"]:before {
   position: relative;
@@ -1447,14 +1464,26 @@ hr:after {
   font-size: 30px;
   line-height: 1.2 !important; }
 
+.rpicon-down {
+  padding-top: 7px; }
+
 [class^="rpicon-down"]:before, [class*=" rpicon-down"]:before {
   position: relative;
   color: #fcc92f;
   font-size: 17px;
   line-height: 1 !important; }
 
-.rpicon-down {
-  padding-top: 7px; }
+.rpicon-flecha {
+  margin-top: 10px;
+  margin-left: 6px;
+  text-decoration: none !important;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-flecha"]:before, [class*=" rpicon-flecha"]:before {
+  color: #fcc92f;
+  font-size: 30px;
+  line-height: 1.2 !important; }
 
 .map {
   width: 21.6875em;
