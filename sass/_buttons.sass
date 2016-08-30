@@ -54,7 +54,7 @@ a:active
 
 .container_button
 	
-	height: 60px
+	height: 65px
 
 .button_rut
 
@@ -65,7 +65,7 @@ a:active
 	box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8)
 	margin-top: 6px
 	margin-bottom: 4px
-	padding-top: 18px
+	padding-top: 16px
 	border-radius: 4px 
 	display: block
 	cursor: pointer
@@ -87,9 +87,9 @@ a:active
 
 .button_two 
 
-	background-color: $button_color
 	padding: 14px 17px 14px 17px
 	border-radius: 4px 
+	border: 1px solid $font-color
 	display: inline-block
 	position: relative
 	float: right
@@ -102,19 +102,19 @@ a:active
 	font-weight: $font_bold
 	text-align: center
 	text-decoration: none
-	color: $font-color_2
+	color: $font-color
 
 	&:active 
 
-		background-color: $on_color
+		background-color: $font-color
 		transition: $transition_fast
 		transform: scale(.98)
 
 .button_two_event
 
-	background-color: $button_color
 	padding: 14px 17px 14px 17px
 	border-radius: 4px 
+	border: 1px solid $font-color
 	display: inline-block
 	position: relative
 	float: right
@@ -127,32 +127,32 @@ a:active
 	font-weight: $font_bold
 	text-align: center
 	text-decoration: none
-	color: $font-color_2
+	color: $font-color
 
 	&:active 
 
-		background-color: $on_color
+		background-color: $font_color
 		transition: $transition_fast 
 		transform: scale(.98)
 
 .button_two_map
 
 	padding: 14px 17px 14px 17px
-	background-color: $button_color
+	background-color: $background_color
 	border-radius: 4px 
+	border: 1px solid $font-color
 	display: inline-block
 	position: relative
 	float: right
 	top: 200px
-	right: 7px
-	margin-top: -4px
+	left: 90px
 	margin-bottom: -42px
 	z-index: 99
 	font-size: 15px
 	font-family: $font-family
 	font-weight: $font_bold
 	text-align: center
-	color: $font-color_2
+	color: $font-color
 	box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.8)
 
 	//top: 20px
@@ -163,7 +163,7 @@ a:active
 
 	&:active 
 
-		background-color: $on_color
+		background-color: $font-color
 		transition: $transition_fast
 		transform: scale(.98)
 
@@ -172,7 +172,7 @@ a:active
 
 	width: 47px
 	height: 32px
-	background: $small_button
+	border: 1px solid $font-color
 	border-radius: 4px
 	float: right
 	display: inline-block
@@ -216,8 +216,26 @@ a:active
 		letter-spacing: 1px
 		color: $font-color
 		padding-bottom: 3px
-		border-bottom: 1px solid $font-color
 
+.button_edit
+
+	width: 45px
+	height: 45px
+	border: 2px solid $font-color
+	border-radius: 50%
+	float: right
+	display: inline-block
+	margin: 12px
+	margin-right: 11px
+	position: relative
+	z-index: 99
+	text-decoration: none
+
+	&:active 
+
+		background-color: $on_color
+		transition: $transition_fast
+		transform: scale(.98)
 
 
 
@@ -459,7 +477,7 @@ a:active
 		border-radius: 4px
 		background: $off_color
 		left: 5px
-		top: 14px
+		top: 20px
 		margin-right: 0px
 		margin-left: 300px
 
@@ -486,22 +504,3 @@ a:active
 
 
 
-.button_edit
-
-	width: 40px
-	height: 40px
-	background: $small_button
-	border-radius: 50%
-	float: right
-	display: inline-block
-	margin: 12px
-	margin-right: 11px
-	position: relative
-	z-index: 99
-	text-decoration: none
-
-	&:active 
-
-		background-color: $on_color
-		transition: $transition_fast
-		transform: scale(.98)

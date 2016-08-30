@@ -169,13 +169,14 @@ body {
   border-radius: 4px;
   border: 1px solid #fcc92f;
   line-height: 3;
-  padding-left: 19px;
-  color: #fcc92f;
   background-color: #1c1216;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  margin-left: 9px; }
+  color: #fcc92f;
+  padding-left: 19px;
+  margin-left: 9px;
+  margin-bottom: 10px; }
 
 .input_search {
   display: block;
@@ -295,7 +296,7 @@ a:active {
   cursor: pointer; }
 
 .container_button {
-  height: 60px; }
+  height: 65px; }
 
 .button_rut {
   width: 95%;
@@ -305,7 +306,7 @@ a:active {
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8);
   margin-top: 6px;
   margin-bottom: 4px;
-  padding-top: 18px;
+  padding-top: 16px;
   border-radius: 4px;
   display: block;
   cursor: pointer;
@@ -323,9 +324,9 @@ a:active {
     box-shadow: 0 5px #4b3884; }
 
 .button_two {
-  background-color: #fcc92f;
   padding: 14px 17px 14px 17px;
   border-radius: 4px;
+  border: 1px solid #fcc92f;
   display: inline-block;
   position: relative;
   float: right;
@@ -338,16 +339,16 @@ a:active {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  color: #1c1216; }
+  color: #fcc92f; }
   .button_two:active {
-    background-color: #7a58dc;
+    background-color: #fcc92f;
     transition: all 0.1s cubic-bezier(0.22, 0.82, 1, 1);
     transform: scale(0.98); }
 
 .button_two_event {
-  background-color: #fcc92f;
   padding: 14px 17px 14px 17px;
   border-radius: 4px;
+  border: 1px solid #fcc92f;
   display: inline-block;
   position: relative;
   float: right;
@@ -360,39 +361,39 @@ a:active {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  color: #1c1216; }
+  color: #fcc92f; }
   .button_two_event:active {
-    background-color: #7a58dc;
+    background-color: #fcc92f;
     transition: all 0.1s cubic-bezier(0.22, 0.82, 1, 1);
     transform: scale(0.98); }
 
 .button_two_map {
   padding: 14px 17px 14px 17px;
-  background-color: #fcc92f;
+  background-color: #190d11;
   border-radius: 4px;
+  border: 1px solid #fcc92f;
   display: inline-block;
   position: relative;
   float: right;
   top: 200px;
-  right: 7px;
-  margin-top: -4px;
+  left: 90px;
   margin-bottom: -42px;
   z-index: 99;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-align: center;
-  color: #1c1216;
+  color: #fcc92f;
   box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.8); }
   .button_two_map:active {
-    background-color: #7a58dc;
+    background-color: #fcc92f;
     transition: all 0.1s cubic-bezier(0.22, 0.82, 1, 1);
     transform: scale(0.98); }
 
 .button_small_two {
   width: 47px;
   height: 32px;
-  background: #fcc92f;
+  border: 1px solid #fcc92f;
   border-radius: 4px;
   float: right;
   display: inline-block;
@@ -425,8 +426,24 @@ a:active {
     font-family: "Roboto", sans-serif;
     letter-spacing: 1px;
     color: #fcc92f;
-    padding-bottom: 3px;
-    border-bottom: 1px solid #fcc92f; }
+    padding-bottom: 3px; }
+
+.button_edit {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #fcc92f;
+  border-radius: 50%;
+  float: right;
+  display: inline-block;
+  margin: 12px;
+  margin-right: 11px;
+  position: relative;
+  z-index: 99;
+  text-decoration: none; }
+  .button_edit:active {
+    background-color: #7a58dc;
+    transition: all 0.1s cubic-bezier(0.22, 0.82, 1, 1);
+    transform: scale(0.98); }
 
 #text_button {
   display: inline-block;
@@ -566,7 +583,7 @@ a:active {
     border-radius: 4px;
     background: #f71138;
     left: 5px;
-    top: 14px;
+    top: 20px;
     margin-right: 0px;
     margin-left: 300px; }
     .checkbox_button_small + label:before {
@@ -578,23 +595,6 @@ a:active {
     .checkbox_button_small:checked + label:before {
       left: 0;
       content: "b"; }
-
-.button_edit {
-  width: 40px;
-  height: 40px;
-  background: #fcc92f;
-  border-radius: 50%;
-  float: right;
-  display: inline-block;
-  margin: 12px;
-  margin-right: 11px;
-  position: relative;
-  z-index: 99;
-  text-decoration: none; }
-  .button_edit:active {
-    background-color: #7a58dc;
-    transition: all 0.1s cubic-bezier(0.22, 0.82, 1, 1);
-    transform: scale(0.98); }
 
 #reports_list {
   margin-top: 0px;
@@ -690,7 +690,7 @@ a:active {
 #user_list {
   margin-top: 0px;
   margin-right: 0.4px;
-  margin-bottom: -20px; }
+  margin-bottom: 0px; }
 
 .user_box {
   width: 346px;
@@ -699,6 +699,11 @@ a:active {
   position: relative;
   float: right;
   margin-bottom: 4px; }
+
+.user_box_search {
+  width: 346px;
+  height: 65px;
+  position: relative; }
 
 .user_avatar_2 {
   width: 46px;
@@ -732,6 +737,16 @@ a:active {
   margin: 5px 0px 5px 0px;
   padding-bottom: 0;
   text-align: left;
+  display: inline-block;
+  color: #fcc92f; }
+
+.username_search #user_name_search {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  margin: 20px 0px 0px 0px;
+  padding-left: 30px;
   display: inline-block;
   color: #fcc92f; }
 
@@ -921,13 +936,15 @@ a:active {
   font-weight: 300;
   letter-spacing: 0.8px;
   text-align: left;
-  padding-left: 25px;
-  padding-right: 25px;
-  color: #fcc92f; }
+  color: #fcc92f;
+  margin: 25px 0 25px 0; }
+
+.alert {
+  display: inline-block; }
 
 .indicators {
   display: block;
-  height: 130px; }
+  height: 125px; }
 
 .indicator {
   width: 95px;
@@ -1012,8 +1029,7 @@ a:active {
   color: #fcc92f; }
 
 .effects {
-  display: block;
-  height: 80px;
+  display: none;
   background-color: #2b1d25;
   margin-bottom: 5px; }
 
@@ -1023,7 +1039,7 @@ a:active {
   float: right;
   display: inline-block;
   position: relative;
-  margin: 14px 6px 13px 6px;
+  margin: 25px 6px 0px 6px;
   right: 15px;
   border-radius: 50%;
   border: 2px solid #fcc92f; }
@@ -1043,8 +1059,8 @@ a:active {
     text-align: center;
     font-size: 22px;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    padding: 20px 20px 30px 20px;
+    font-weight: 500;
+    padding: 20px 20px 25px 20px;
     position: relative;
     color: #fcc92f; }
   .container .title-icon {
@@ -1053,8 +1069,8 @@ a:active {
     text-align: center;
     font-size: 22px;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    padding: 15px 55px 40px 55px;
+    font-weight: 500;
+    padding: 20px 55px 40px 55px;
     position: relative;
     color: #fcc92f; }
   .container h2 {
@@ -1092,6 +1108,13 @@ a:active {
     list-style-type: none;
     margin: 17px 0 17px 0;
     color: #fcc92f; }
+  .container .users_li {
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    list-style-type: none;
+    margin: 5px 0 5px 0;
+    color: #fcc92f; }
   .container .form_content {
     display: none;
     background-color: #2b1d25; }
@@ -1112,7 +1135,7 @@ a:active {
     text-align: left;
     font-size: 27px;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     padding: 28px 12px 10px 27px;
     position: relative;
     color: #fcc92f; }
@@ -1152,10 +1175,10 @@ hr:after {
     margin: 0 auto;
     display: block;
     text-align: center;
-    font-size: 23px;
+    font-size: 24px;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    padding: 17px 60px 17px 60px;
+    font-weight: 500;
+    padding: 20px 60px 17px 60px;
     position: relative;
     color: #fcc92f;
     text-shadow: 0.2px 0.8px 1px rgba(0, 0, 0, 0.8); }
@@ -1186,7 +1209,7 @@ hr:after {
     text-align: center;
     font-size: 22px;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     padding: 20px 20px 30px 20px;
     position: relative;
     color: #fcc92f; }
@@ -1220,6 +1243,26 @@ hr:after {
     margin: -78px 13px 0px 0px; }
     .container_results .go-button a {
       text-decoration: none; }
+
+.event_box {
+  width: 21.6875em;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #751626;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8);
+  margin-top: 7px;
+  border-radius: 4px;
+  display: block; }
+  .event_box h1 {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    padding: 20px 20px 25px 20px;
+    position: relative;
+    color: #fcc92f; }
 
 [class^="rpicon-"]:before, [class*=" rpicon-"]:before {
   position: relative;
@@ -1276,20 +1319,19 @@ hr:after {
 
 [class^="rpicon-more"]:before, [class*=" rpicon-more"]:before {
   position: relative;
-  color: #190d11;
+  color: #fcc92f;
   font-size: 15px;
   bottom: 1px;
   line-height: 2.3 !important; }
 
 .rpicon-more {
-  margin: 1px;
   text-align: center; }
 
 [class^="rpicon-edit"]:before, [class*=" rpicon-edit"]:before {
   position: relative;
-  color: #190d11;
-  font-size: 17px;
-  line-height: 1.7 !important;
+  color: #fcc92f;
+  font-size: 21px;
+  line-height: 1.2 !important;
   text-align: center;
   text-decoration: none; }
   [class^="rpicon-edit"]:before:active, [class*=" rpicon-edit"]:before:active {
@@ -1319,7 +1361,7 @@ hr:after {
 
 [class^="rpicon-user-good"]:before, [class*=" rpicon-user-good"]:before {
   font-size: 75px;
-  color: #7a58dc; }
+  color: #41ab4b; }
 
 .rpicon-user-bad {
   margin-top: 14px;
@@ -1465,7 +1507,7 @@ hr:after {
   line-height: 1.2 !important; }
 
 .rpicon-down {
-  padding-top: 7px; }
+  padding-top: 4px; }
 
 [class^="rpicon-down"]:before, [class*=" rpicon-down"]:before {
   position: relative;
@@ -1488,7 +1530,6 @@ hr:after {
 .map {
   width: 21.6875em;
   margin: 0 auto;
-  margin-top: 7px;
   border-radius: 4px;
   display: block; }
 

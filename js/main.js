@@ -11,3 +11,12 @@ $('.toggle_button_big').on('click',function(){
 	//$('.lista_form_1').after(clone);
 	//$('#lista_form_1').appendChild('#name_list');
 //});
+
+$(document).ready(function(){
+
+$('#btn_display').click(function(e){
+	e.preventDefault();
+	$('#display_content').slideToggle('slow');
+});
+
+});
