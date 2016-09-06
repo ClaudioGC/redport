@@ -110,3 +110,9 @@
 .rpicon-down:before {
   content: "\78";
 }
+.rpicon-menu:before {
+  content: "\79";
+}
+.rpicon-appartment:before {
+  content: "\7a";
+}
