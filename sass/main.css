@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700';
+@import url(styles.css);
 * {
   box-sizing: border-box; }
 
@@ -655,7 +656,7 @@ a:active {
   width: 47px;
   height: 47px;
   border-radius: 50%;
-  background: #4a3a42;
+  background: #4c3e2d;
   position: relative;
   margin-left: 5px;
   margin-top: 15px;
