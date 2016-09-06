@@ -195,7 +195,7 @@ hr:after
 .container_results
 
 	width: $ancho_contenedor
-	height: 485px
+	height: 503px
 	margin: 0 auto
 	background-color: $background_color
 	box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8)
@@ -326,3 +326,70 @@ hr:after
 		position: relative 
 		color: $font-color
 
+//botones contenedores reportar entorno
+
+.markers
+	
+	display: block
+	height: 100%
+	margin-top: -19px
+	margin-bottom: 35px
+
+
+
+.marker
+
+	//width: 135px
+	//height: 130px
+	//display: inline-block
+	//position: relative
+	//margin: 0px 5px 10px 5px
+	//left: 30px
+	//border-radius: 4px
+	//border:  1px solid #fcc92f
+
+	display: none
+
+	//prendido
+
+	+ label
+
+		display: inline-block
+		position: relative
+		width: 150px
+		height: 135px
+		margin: 0px 5px 9px 5px
+		left: 11px
+		top: 20px
+		border-radius: 4px
+		border:  1px solid #fcc92f
+
+		&:before
+		
+			display: inline-block
+			content: ""
+
+	//apagado
+
+	&:checked
+
+		+ label
+			
+			background: $dark_yellow
+			transition: $transition
+
+			&:before
+
+				left: 0
+				content: ""
+
+.text_marker
+
+	font-size: 16px
+	font-family: $font-family
+	font-weight: normal
+	letter-spacing: 0.8px
+	text-align: center
+	margin-top: 0px
+	margin-bottom: 16px
+	color: $font-color
