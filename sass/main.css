@@ -1643,7 +1643,7 @@ hr:after {
 .rpicon-menu:focus {
   color: #7a58dc; }
 
-[class^="rpicon-menu"]:before, [class*=" rpicon-menu"]:before {
+[class^="rpicon-menu"]:before {
   color: #190d11;
   font-size: 30px;
   line-height: 1.2 !important; }
