@@ -20,3 +20,32 @@ $('#btn_display').click(function(e){
 });
 
 });
+
+$(document).ready(main);
+
+var contador = 1 ;
+
+function main(){
+
+	$('.menu-button').click(function(e){
+		e.preventDefault();
+
+		//$('.menu_nav').toggle();
+		if(contador==1){
+
+			$('.menu_nav').animate({
+				right: '0'
+			})
+
+			contador = 0;
+
+		} else { 
+
+			contador = 1;
+
+			$('.menu_nav').animate({
+				right: '-100%'
+			})
+		}
+	})
+}

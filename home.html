@@ -17,21 +17,36 @@
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet' />
 </head>
  <body>
-   <div class="pagina">
+   <div class="pagina_test">
    <!-- ======= header======= -->
   <div class="header">
-    <div class="back-button"><a href="formulario_1.html"><div class="rpicon-back"></div></a></div>
-    <div class="title_header"><h1>Gloria Aracena</h1></div>
     <div class="message-button"><a href="mensajes.html"><div class="rpicon-message"></div></a></div>
+    <div class="title_header"><h1>Gloria Aracena</h1></div>
+    <div class="menu-button"><a href="#"><div class="rpicon-menu"></div></a></div>
+   <!-- <div class="back-button"><a href="formulario_1.html"><div class="rpicon-back"></div></a></div>-->
+    <!--<div class="message-button"><a href="mensajes.html"><div class="rpicon-message"></div></a></div>-->
     
-    <div class="navbar">
+   <!--<div class="navbar">
       <ul class="navbar_content">
-        <a href="estado_hogar.html" class="navbar-button"><li>Estado<br> del hogar</li></a>
-        <a href="reportar.html" class="navbar-button"><li>Reportar</li></a>
-        <a href="reportar_entorno.html" class="navbar-button"><li>Reportar<br>entorno</li>
+        <a href="reportar.html" class="navbar-button"><li>Reporte</li></a>
+        <a href="estado_hogar.html" class="navbar-button"><li>Hogar</li></a>
+        <a href="reportar_entorno.html" class="navbar-button"><li>Entorno</li>
       </ul>
-    </div>
+    </div>-->
   </div>
+
+    <nav class="menu_nav">
+      <ul>
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="reportar.html">reportar</a></li>
+        <li><a href="home.html #mi_ficha">mi ficha</a></li>
+        <li><a href="estado_hogar.html">hogar</a></li>
+        <li><a href="reportar_entorno.html">entorno</a></li>
+        <li><a href="home.html #reportes">últimos reportes</a></li>
+      </ul>
+
+    </nav>
+
 <div class="container_search">
     <form action="">
       <a href="resultados_busqueda.html" class="rpicon-search"></a>
@@ -40,7 +55,7 @@
     </form>
   </div>
 
-<div class="event_box">
+<div class="event_box_red">
   <h1>Alerta roja por sismo</h1>
   <div class="event_content">
   <div class="number_box_red">
@@ -81,9 +96,9 @@
       <div class="rpicon-rupture-home"></div>
   </div>
   <div class="alert">
-  <p class="alerts">ONEMI estableció evacuación preventiva en el borde costero de las regiones con mayores intensidades.</p>
-    <p class="alerts">a las 20:55 horas el SHOA declaró ALERTA de Tsunami, la cual se extendió a todo el borde costero del país, junto con ello entregó el tren de olas el que se continúa monitoreando.</p>
-    <p class="alerts">Et omnesque delectus eum, vis alterum eleifend ad. Sit ceteros sapientem quaerendum no. Eu duo populo vituperata. </p>
+    <span class="alert_date">20-sept</span><span class="alert_hour">20:35 pm</span><p class="alerts">ONEMI estableció evacuación preventiva en el borde costero de las regiones con mayores intensidades.</p>
+    <span class="alert_date">20-sept</span><span class="alert_hour">20:35 pm</span><p class="alerts">a las 20:55 horas el SHOA declaró ALERTA de Tsunami, la cual se extendió a todo el borde costero del país, junto con ello entregó el tren de olas el que se continúa monitoreando.</p>
+    <span class="alert_date">20-sept</span><span class="alert_hour">20:35 pm</span><p class="alerts">Et omnesque delectus eum, vis alterum eleifend ad. Sit ceteros sapientem quaerendum no. Eu duo populo vituperata. </p>
   </div>
 </div>
 </div>
@@ -114,7 +129,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container" id="mi_ficha">
  <a class="button_edit" href="#"><div class="rpicon-edit"></div></a>
   <div class="edit_title"><h1 class="title-icon">Ficha de información</h1></div>
 <div class="perfil_persona">
@@ -126,10 +141,10 @@
     <ul class="name_list">
       <div class="list_box">
         <div class="text_box_2">
-          <li>nombre_apellido1</li>
+          <li>Carlos Aracena R.</li>
         </div>
         <div class="text_box_2">
-          <li>nombre_apellido2</li>
+          <li>María Fernandez S.</li>
         </div>
       </div>
     </ul>
@@ -164,6 +179,8 @@
     <div class="edit_title"><h1 class="title-icon">Estado de mi hogar</h1></div>
     <div class="home-icon-container"><div class="rpicon-home"></div></div>
     <h2 class="texto_vivienda">Casa</h2>
+    <div class="appartment-icon-container"><div class="rpicon-appartment"></div></div>
+    <h2 class="texto_vivienda">Departamento</h2>
 
   <ul class="name_list">
     <div class="list_box">
@@ -220,7 +237,7 @@
                 <div class="username">
                 <h2 id="name" class="username">Bárbara Mora R.</h2>
             </a>
-                <span class="comment_date">5 minutos</span>
+                <span class="comment_date">5 min</span>
               <div class="comment_content"><p class="comment">Et omnesque delectus eum, vis alterum eleifend ad. Sit ceteros sapientem quaerendum no. Eu duo populo vituperata.</p></div>
               </div>
             </div>
