@@ -1,5 +1,4 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700';
-@import url(styles.css);
 * {
   box-sizing: border-box; }
 
@@ -177,7 +176,7 @@ body {
   z-index: 100; }
   .menu_nav ul {
     padding-left: 0;
-    margin-top: 130px; }
+    margin-top: 120px; }
   .menu_nav li {
     list-style-type: none;
     font-size: 17px;
