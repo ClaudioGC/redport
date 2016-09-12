@@ -776,7 +776,7 @@ input:focus {
   font-weight: normal;
   letter-spacing: 0.3px;
   text-align: center;
-  margin-top: 4px;
+  margin-top: 30px;
   margin-bottom: 4px;
   color: #fcc92f; }
 
@@ -925,6 +925,13 @@ input:focus {
     color: #fcc92f;
     right: 243px;
     bottom: 40px; }
+
+[data-tooltip] {
+  background-color: #4c3e2d;
+  position: relative; }
+  [data-tooltip]:after {
+    content: "";
+    position: absolute; }
 
 .container_event {
   padding: 17px 0px 0px 0px; }
@@ -1710,7 +1717,7 @@ hr:after {
   line-height: 1 !important; }
 
 .rpicon-message-inv {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 6px;
   text-decoration: none !important;
   position: relative;
