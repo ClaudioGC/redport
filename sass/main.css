@@ -176,7 +176,7 @@ body {
   z-index: 100; }
   .menu_nav ul {
     padding-left: 0;
-    margin-top: 120px; }
+    margin-top: 90px; }
   .menu_nav li {
     list-style-type: none;
     font-size: 17px;
@@ -1481,22 +1481,33 @@ hr:after {
 [class^="rpicon-home"]:before, [class*=" rpicon-home"]:before {
   position: relative;
   color: #fcc92f;
-  font-size: 55px;
+  font-size: 60px;
   line-height: 1.3 !important; }
 
 .home-icon-container {
   display: block;
   text-align: center; }
 
+#home {
+  margin-left: 43px;
+  position: relative;
+  z-index: 99; }
+
 [class^="rpicon-appartment"]:before, [class*=" rpicon-appartment"]:before {
   position: relative;
   color: #fcc92f;
-  font-size: 55px;
+  font-size: 60px;
   line-height: 1.3 !important; }
 
 .appartment-icon-container {
   display: block;
   text-align: center; }
+
+#appartment {
+  bottom: 6px;
+  margin-left: 43px;
+  position: relative;
+  z-index: 99; }
 
 [class^="rpicon-toggle"]:before, [class*=" rpicon-toggle"]:before {
   position: relative;
@@ -1744,6 +1755,101 @@ hr:after {
 [class^="rpicon-flecha"]:before, [class*=" rpicon-flecha"]:before {
   color: #fcc92f;
   font-size: 30px;
+  line-height: 1.2 !important; }
+
+.rpicon-cut-road {
+  margin-top: -16px;
+  margin-left: 38px;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-cut-road"]:before, [class*="rpicon-cut-road"]:before {
+  color: #fcc92f;
+  font-size: 70px;
+  line-height: 1.2 !important; }
+
+.rpicon-cut-bridge {
+  top: 23px;
+  margin-top: -41px;
+  margin-left: 30px;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-cut-bridge"]:before, [class*="rpicon-cut-bridge"]:before {
+  color: #fcc92f;
+  font-size: 90px;
+  line-height: 1.2 !important; }
+
+.rpicon-fire {
+  top: 10px;
+  margin-top: -16px;
+  margin-left: 38px;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-fire"]:before, [class*="rpicon-fire"]:before {
+  color: #fcc92f;
+  font-size: 70px;
+  line-height: 1.2 !important; }
+
+.rpicon-landslide {
+  top: 10px;
+  margin-top: -16px;
+  margin-left: 38px;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-landslide"]:before, [class*="rpicon-landslide"]:before {
+  color: #fcc92f;
+  font-size: 70px;
+  line-height: 1.2 !important; }
+
+.rpicon-crush {
+  top: 35px;
+  margin-top: -79px;
+  margin-left: 12px;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-crush"]:before, [class*="rpicon-crush"]:before {
+  color: #fcc92f;
+  font-size: 123px;
+  line-height: 1.2 !important; }
+
+.rpicon-hospital {
+  top: 5px;
+  margin-top: -22px;
+  margin-left: 38px;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-hospital"]:before, [class*="rpicon-hospital"]:before {
+  color: #fcc92f;
+  font-size: 75px;
+  line-height: 1.2 !important; }
+
+.rpicon-refuge {
+  top: 10px;
+  margin-top: -22px;
+  margin-left: 38px;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-refuge"]:before, [class*="rpicon-refuge"]:before {
+  color: #fcc92f;
+  font-size: 75px;
+  line-height: 1.2 !important; }
+
+.rpicon-collection-center {
+  top: 10px;
+  margin-top: -22px;
+  margin-left: 38px;
+  position: relative;
+  z-index: 99; }
+
+[class^="rpicon-collection-center"]:before, [class*="rpicon-collection-center"]:before {
+  color: #fcc92f;
+  font-size: 75px;
   line-height: 1.2 !important; }
 
 .map {
