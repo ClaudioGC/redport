@@ -77,9 +77,6 @@
 .rpicon-user-good-small:before {
   content: "\6d";
 }
-.rpicon-humidity:before {
-  content: "\6f";
-}
 .rpicon-temperature:before {
   content: "\70";
 }
@@ -115,4 +112,31 @@
 }
 .rpicon-appartment:before {
   content: "\7a";
+}
+.rpicon-cut-road:before {
+  content: "\41";
+}
+.rpicon-cut-bridge:before {
+  content: "\42";
+}
+.rpicon-landslide:before {
+  content: "\44";
+}
+.rpicon-crush:before {
+  content: "\45";
+}
+.rpicon-fire:before {
+  content: "\43";
+}
+.rpicon-humedity:before {
+  content: "\6f";
+}
+.rpicon-hospital:before {
+  content: "\46";
+}
+.rpicon-refuge:before {
+  content: "\47";
+}
+.rpicon-collection-center:before {
+  content: "\48";
 }
