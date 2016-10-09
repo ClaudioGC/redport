@@ -1,3 +1,9 @@
+<?php
+include "conUCV.php";
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -29,20 +35,23 @@
 <section class="content">
 
 <div class="container_2">
-  <a class="button_rut" href="#">Necesito ayuda urgente</a>
+  <a class="button_rut" href="#">
+      Necesito ayuda urgente</a>
 </div>
 
 <div class="container">
 
   <h1 class="h1_inverse">REPÓRTATE</h1>
-  <p class="p_inverse">Repórta tu estado para que puedas recibir <b>ayuda</b> o los demás sepan que <b>estás bien</b></h2>
+  <p class="p_inverse">Repórta tu estado para que puedas recibir <b>ayuda</b> o los demás sepan que <b>estás bien</b></p>
   <div class="input_rut">
   <label class="label_rut" for="rut" type="text">Ingresa tu rut</label>
-  <form action="" class="login-rut">
+
+  <form action="formulario_1.php" class="login-rut" method="POST">
     <input class="login-rut__box" type="text" id="rut" name="rut" placeholder="11.111.111-1" maxlength="12">
+      <input class="button_rut" type="submit" />
   </form>
-  </div> 
- <a class="button_rut" href="formulario_1.html">Ingresar</a> 
+  </div>
+ <!--<a class="button_rut" href="formulario_1.html">Ingresar</a>-->
 </div>
 
 <div class="event_box_red">

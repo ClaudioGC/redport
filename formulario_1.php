@@ -1,3 +1,7 @@
+<?php
+include "conUCV.php";
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,8 +18,34 @@
    <div class="pagina_esp">
    <!-- ======= header======= -->
   <div class="header2">
-  	<div class="back-button"><a href="index.html"><div class="rpicon-back"></div></a></div>
-    <div class="title_header"><h1>Gloria Aracena</h1></div>
+  	<div class="back-button"><a href="index.php"><div class="rpicon-back"></div></a></div>
+    <div class="title_header"><h1>
+
+
+			<?php
+			if($_REQUEST['rut']) {
+				$rut = $_REQUEST['rut'];
+				$sql = 'SELECT * FROM personas WHERE rut = ' . $rut;
+				$resultado = mysql_query($sql, $enlace);
+
+				if (!$resultado) {
+					echo "Error de BD, no se pudo consultar la base de datos\n";
+					echo "Error MySQL:" . mysql_error();
+					exit;
+				}
+
+				while ($fila = mysql_fetch_assoc($resultado)) {
+					echo $fila['nombre'];
+				}
+
+				mysql_free_result($resultado);
+			}else{
+				echo "Error";
+			}
+			?>
+
+
+		</h1></div>
 
   </div>
 
@@ -49,7 +79,7 @@
 	</div>
 
 </div>
-
+<!--
 <div class="container">
 
   	<h1 id="title_form">¿Están estas personas contigo?</h1>
@@ -73,25 +103,79 @@
   </div>
 
     
-</div>
+</div>-->
 
 <div class="container">
 
   <h1 id="title_form">¿Hay otras personas contigo?</h1>
   	<ul class="name_list">
   		<div class="list_box">
-	  		<div class="text_box_2">
-				<li>Felipe Castillo R.</li>
-			</div>
-			<div class="text_box_2">
-				<li>Gabriela Benitez C.</li>
-			</div>
+			<?php
+
+
+			if($_REQUEST['rut']) {
+				$rut = $_REQUEST['rut'];
+				$sql = 'SELECT nombre FROM familia WHERE familiar = ' . $rut;
+				$resultado = mysql_query($sql, $enlace);
+
+				if (!$resultado) {
+					echo "Error de BD, no se pudo consultar la base de datos\n";
+					echo "Error MySQL:" . mysql_error();
+					exit;
+				}
+
+				while ($fila = mysql_fetch_assoc($resultado)) {
+					$array[] = $fila;
+
+					//echo $fila['nombre'];
+				}
+
+				mysql_free_result($resultado);
+			}else{
+				echo "Error";
+			}
+
+
+			//$array = array(1, 2, 3, 4);
+			/*foreach ($array as &$valor) {
+				$valor = $valor * 2;
+			}*/
+			// $array ahora es array(2, 4, 6, 8)
+
+			// sin unset($valor), $valor aún es una referencia al último elemento: $array[3]
+
+			foreach ($array as $clave) {
+				// $array[3] se actualizará con cada valor de $array...
+				echo '<div class="text_box_2">';
+				echo '<li>';
+				print_r($clave['nombre']);
+				echo '</li>';
+				echo '</div>';
+
+				//echo "{$clave}";
+				//print_r($array);
+			}
+			// ...hasta que finalmente el penúltimo valor se copia al último valor
+
+			// salida:
+			// 0 => 2 Array ( [0] => 2, [1] => 4, [2] => 6, [3] => 2 )
+			// 1 => 4 Array ( [0] => 2, [1] => 4, [2] => 6, [3] => 4 )
+			// 2 => 6 Array ( [0] => 2, [1] => 4, [2] => 6, [3] => 6 )
+			// 3 => 6 Array ( [0] => 2, [1] => 4, [2] => 6, [3] => 6 )
+			?>
+
 		</div>
 	</ul>
 <div class="toggle_box">
   <div class="text_box_3">
 		<p id="text_button">Agregar otra persona</p>
-		<a href="agregar_persona.html"><div class="button_small_two"><div class="rpicon-more"></div></div></a>
+
+	  <a href="agregar_persona.php?rut=<?php echo $_REQUEST['rut'];?>">
+		  <div class="button_small_two"><div class="rpicon-more"></div></div>
+	  </a>
+
+
+		<!--<a href="agregar_persona.php"><div class="button_small_two"><div class="rpicon-more"></div></div></a>-->
 	</div>
 </div>
 </div>
