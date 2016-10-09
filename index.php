@@ -36,7 +36,7 @@ include "conUCV.php";
 
 <div class="container_2">
   <a class="button_rut" href="#">
-      Necesito ayuda urgente</a>
+      Enviar SOS</a>
 </div>
 
 <div class="container">
@@ -44,11 +44,12 @@ include "conUCV.php";
   <h1 class="h1_inverse">REPÓRTATE</h1>
   <p class="p_inverse">Repórta tu estado para que puedas recibir <b>ayuda</b> o los demás sepan que <b>estás bien</b></p>
   <div class="input_rut">
-  <label class="label_rut" for="rut" type="text">Ingresa tu rut</label>
+  <!--<label class="label_rut" for="rut" type="text">Ingresa tu rut</label>-->
 
   <form action="formulario_1.php" class="login-rut" method="POST">
-    <input class="login-rut__box" type="text" id="rut" name="rut" placeholder="11.111.111-1" maxlength="12">
-      <input class="button_rut" type="submit" />
+    <input type="text" id="ip" name="ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
+      <button class="button_rut" type="submit">Reportarme</button>
+      <!--<input class="button_rut" type="submit" text="Reportarme" />-->
   </form>
   </div>
  <!--<a class="button_rut" href="formulario_1.html">Ingresar</a>-->
