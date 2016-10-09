@@ -348,10 +348,9 @@ input:focus {
   height: 60px;
   margin: 0 auto;
   background-color: #fcc92f;
-  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8);
   margin-top: 6px;
-  margin-bottom: 4px;
   padding-top: 16px;
+  margin-bottom: 4px;
   border-radius: 4px;
   display: block;
   cursor: pointer;
@@ -360,9 +359,32 @@ input:focus {
   font-family: "Roboto", sans-serif;
   color: #1c1216;
   font-weight: 500;
-  text-decoration: none;
-  box-shadow: 0 0 #7a58dc inset; }
+  text-decoration: none; }
   .button_rut:active {
+    color: #190d11 !important;
+    transition: all 0.1s cubic-bezier(0.22, 0.82, 1, 1);
+    transform: scale(0.98);
+    box-shadow: 0 5px #4c3e2d; }
+
+.button_ip {
+  width: 95%;
+  border: none;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #fcc92f;
+  margin-top: 6px;
+  margin-bottom: 4px;
+  padding-top: 0px;
+  border-radius: 4px;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  color: #1c1216;
+  font-weight: 500;
+  text-decoration: none; }
+  .button_ip:active {
     color: #190d11 !important;
     transition: all 0.1s cubic-bezier(0.22, 0.82, 1, 1);
     transform: scale(0.98);
