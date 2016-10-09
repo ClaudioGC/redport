@@ -8,9 +8,15 @@
 include "conUCV.php";
 
 $rut = $_REQUEST['rut'];
+//$long = ip2long($rut);
+$long = ip2long("10.30.61.202");
+
+
+
+$datenow = date("d/m/y - H:i:s");
 $c1 = 0;
 $c2 = 0;
-$sql = 'INSERT INTO personas (registroIP, cord1, cord2) VALUES("'.$rut.'","'.$c1.'","'.$c2.'")';
+$sql = 'INSERT INTO personas (registroIP,dateLogin, cord1, cord2) VALUES("'.$long.'","'.$datenow.'","'.$c1.'","'.$c2.'")';
 echo $sql;
 $resultado = mysql_query($sql, $enlace);
 

@@ -39,6 +39,13 @@ include "conUCV.php";
       Enviar SOS</a>
 </div>
 
+    <p>Your Location: <span id="location"></span></p>
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+
+    <p id="demo"></p>
+
 <div class="container">
 
   <h1 class="h1_inverse">REPÓRTATE</h1>
@@ -132,7 +139,8 @@ include "conUCV.php";
             style: 'mapbox://styles/cleudio/ciqiooxr70000bjm0krbou6i0',
             center: [-71.601162, -33.017948],
             zoom: 10
-        });
+
+        })
         </script>
 
    </div>
@@ -143,6 +151,23 @@ include "conUCV.php";
 
 <script src="js/jquery-3.0.0.min.js"></script>
 <script src="js/main.js"></script>
+   <script>
+       var x = document.getElementById("demo");
+
+       function getLocation() {
+           if (navigator.geolocation) {
+               navigator.geolocation.getCurrentPosition(showPosition);
+           } else {
+               x.innerHTML = "Geolocation is not supported by this browser.";
+           }
+       }
+
+       function showPosition(position) {
+           x.innerHTML = "Latitude: " + position.coords.latitude +
+               "<br>Longitude: " + position.coords.longitude;
+       }
+   </script>
+
 
  </body>
 </html>

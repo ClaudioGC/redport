@@ -21,9 +21,9 @@ include "conUCV.php";
   	<div class="back-button"><a href="index.php"><div class="rpicon-back"></div></a></div>
     <div class="title_header"><h1>
 
-
+			Bienvenido
 			<?php
-			if($_REQUEST['rut']) {
+			/*if($_REQUEST['rut']) {
 				$rut = $_REQUEST['rut'];
 				$sql = 'SELECT * FROM personas WHERE rut = ' . $rut;
 				$resultado = mysql_query($sql, $enlace);
@@ -41,7 +41,7 @@ include "conUCV.php";
 				mysql_free_result($resultado);
 			}else{
 				echo "Error";
-			}
+			}*/
 			?>
 
 
@@ -111,7 +111,7 @@ include "conUCV.php";
   	<ul class="name_list">
   		<div class="list_box">
 			<?php
-
+/*
 
 			if($_REQUEST['rut']) {
 				$rut = $_REQUEST['rut'];
@@ -133,7 +133,7 @@ include "conUCV.php";
 				mysql_free_result($resultado);
 			}else{
 				echo "Error";
-			}
+			}*/
 
 
 			//$array = array(1, 2, 3, 4);
@@ -143,7 +143,7 @@ include "conUCV.php";
 			// $array ahora es array(2, 4, 6, 8)
 
 			// sin unset($valor), $valor aún es una referencia al último elemento: $array[3]
-
+/*
 			foreach ($array as $clave) {
 				// $array[3] se actualizará con cada valor de $array...
 				echo '<div class="text_box_2">';
@@ -161,7 +161,7 @@ include "conUCV.php";
 			// 0 => 2 Array ( [0] => 2, [1] => 4, [2] => 6, [3] => 2 )
 			// 1 => 4 Array ( [0] => 2, [1] => 4, [2] => 6, [3] => 4 )
 			// 2 => 6 Array ( [0] => 2, [1] => 4, [2] => 6, [3] => 6 )
-			// 3 => 6 Array ( [0] => 2, [1] => 4, [2] => 6, [3] => 6 )
+			// 3 => 6 Array ( [0] => 2, [1] => 4, [2] => 6, [3] => 6 )*/
 			?>
 
 		</div>
