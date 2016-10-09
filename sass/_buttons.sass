@@ -47,10 +47,9 @@
 	height: 60px
 	margin: 0 auto
 	background-color: $button_color
-	box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.8)
 	margin-top: 6px
-	margin-bottom: 4px
 	padding-top: 16px
+	margin-bottom: 4px
 	border-radius: 4px 
 	display: block
 	cursor: pointer
@@ -60,7 +59,33 @@
 	color: $font-color_2
 	font-weight: $font_medium
 	text-decoration: none
-	box-shadow: 0 0 $on_color inset
+
+	&:active 
+
+		color: $background_color !important
+		transition: $transition_fast
+		transform: scale(.98)
+		box-shadow: 0 5px $dark_yellow
+
+.button_ip
+
+	width: $ancho_btn_rut
+	border-none
+	height: 60px
+	margin: 0 auto
+	background-color: $button_color
+	margin-top: 6px
+	margin-bottom: 4px
+	padding-top: 0px
+	border-radius: 4px 
+	display: block
+	cursor: pointer
+	text-align: center
+	font-size: 22px
+	font-family: $font-family
+	color: $font-color_2
+	font-weight: $font_medium
+	text-decoration: none
 
 	&:active 
 
