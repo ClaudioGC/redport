@@ -46,9 +46,11 @@ include "conUCV.php";
   <div class="input_rut">
   <!--<label class="label_rut" for="rut" type="text">Ingresa tu rut</label>-->
 
-  <form action="formulario_1.php" class="login-rut" method="POST">
-    <input type="text" id="ip" name="ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
-      <button class="button_rut" type="submit">Reportarme</button>
+  <form action="agregar_direccion_POST.php" class="login-rut" method="POST">
+      <!--<form action="formulario_1.php" class="login-rut" method="POST">-->
+
+      <input type="text" id="rut" name="rut" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
+      <button class="button_ip" type="submit">Reportarme</button>
       <!--<input class="button_rut" type="submit" text="Reportarme" />-->
   </form>
   </div>
