@@ -135,15 +135,15 @@ include "conUCV.php";
       }else if($row["tipo"] == "UV"){
 
         if(round($row["valor"]) <= 2){
-          echo "<p class='text_indicator' style='color:green;'>BAJO</p>";
+          echo "<p class='text_indicator' style='color:#41ab4b;'>BAJO</p>";
         }else if(round($row["valor"]) <= 5){
           echo "<p class='text_indicator' style='color:orange;'>MEDIO</p>";
         }else if(round($row["valor"]) <= 7){
           echo "<p class='text_indicator' style='color:orangered;'>ALTO</p>";
         }else if(round($row["valor"]) <= 10){
-          echo "<p class='text_indicator' style='color:red;'>MUY ALTO</p>";
+          echo "<p class='text_indicator' style='color:#f71138;'>MUY ALTO</p>";
         }else if(round($row["valor"]) >= 11){
-          echo "<p class='text_indicator' style='color:purple;'>EXTREMO</p>";
+          echo "<p class='text_indicator' style='color:#7a58dc;'>EXTREMO</p>";
         }
       }else if($row["tipo"] == "Humedad"){
         echo "<p class='text_indicator'>".round($row['valor'])."%</p>";
