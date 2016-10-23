@@ -1114,16 +1114,6 @@ input:focus {
   margin-bottom: 16px;
   color: #fcc92f; }
 
-.bar_uv_background {
-  width: 57px;
-  height: 3px;
-  background-color: #4c3e2d;
-  position: relative;
-  display: inline-block;
-  margin-top: 15px;
-  left: 7px;
-  bottom: 21px; }
-
 .bar_background {
   width: 70px;
   height: 3px;
