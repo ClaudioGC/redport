@@ -1136,11 +1136,11 @@ input:focus {
 
 .bar_uv {
   height: 3px;
-  background-color: #ea711f;
+  background-color: #fcc92f;
   position: relative;
   display: inline-block;
   margin-top: 15px;
-  left: 25px;
+  margin-left: 11px;
   bottom: 43px; }
 
 .text_uv {
