@@ -48,13 +48,24 @@ file_put_contents("seed.txt", $file);
     </div>-->
 
     <?php
+    include "conUCV.php";
 
     $fh = fopen('seed.txt','r');
+    $cleanquery = "DELETE FROM mesh_redport.sensores WHERE DATE_FORMAT(STR_TO_DATE(fecha, '%d/%m/%Y'), '%Y-%m-%d') < DATE_SUB(NOW(), INTERVAL 10 DAY)";
+    $resultado = mysql_query($cleanquery, $enlace);
+
     while ($lines = fgets($fh)) {
         // <... Do your work with the line ...>
         $line = explode(" ", $lines);
-        echo "temp ".$line[0]; // temperatura
-        echo "\n hume ".$line[1]; // humedad
+        foreach ($line as &$valor) {
+            echo $valor."<br>";
+            $valores = explode(":", $valor);
+            $sqltemp = 'INSERT INTO sensores (tipo, valor, fecha) VALUES("'.$valores[0].'","'.$valores[1].'","'.date("d/m/Y H:i:s").'")';
+
+            $resultado = mysql_query($sqltemp, $enlace);
+        }
+        /*echo "temp ".$line[0]; // temperatura
+        echo "\n hume ".$line[1]; // humedad*/
         //echo($lines);
     }
     fclose($fh);
@@ -65,9 +76,9 @@ file_put_contents("seed.txt", $file);
      * Date: 02-10-2016
      * Time: 18:48
      */
-    include "conUCV.php";
+    //include "conUCV.php";
 
-    $temp = $line[0];
+    /*$temp = $line[0];
     $hume = $line[1];
     if($temp){
         $sqltemp = 'INSERT INTO sensores (tipo, valor, fecha) VALUES("'.Temperatura.'","'.$temp.'","'.date("d/m/Y H:i:s").'")';
@@ -75,7 +86,7 @@ file_put_contents("seed.txt", $file);
 
         $resultado = mysql_query($sqltemp, $enlace);
         $resultado = mysql_query($sqlhum, $enlace);
-    }
+    }*/
 
     /*if (!$resultado) {
         echo "Error de BD, no se pudo consultar la base de datos\n";
@@ -99,7 +110,7 @@ file_put_contents("seed.txt", $file);
     <div id="lights" class='cf'>
         <h2>Node 1: Light Control</h2>
         <dir id="module-1">
-            <div class="led-control">
+            <div class="led-control"> 
                 <label>Blink rate</label>
                 <input type="range" id="rangered" min="0" max="255" value="0">
             </div>
