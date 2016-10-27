@@ -23,7 +23,7 @@ include "conUCV.php";
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet' />
 </head>
- <body>
+ <body onload="getLocation()">
    <div class="pagina_esp">
    <!-- ======= header======= -->
   <div class="header2">
@@ -50,36 +50,60 @@ include "conUCV.php";
       <!--<form action="formulario_1.php" class="login-rut" method="POST">-->
 
       <input type="text" id="rut" name="rut" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
-      <button class="button_ip" type="submit">Reportarme</button>
+      <input type="text" id="latitu" name="latitu" value="">
+      <input type="text" id="longitu" name="longitu" value="">
+
+      <button class="button_ip" onclick="getLocation()" type="submit">Reportarme</button>
       <!--<input class="button_rut" type="submit" text="Reportarme" />-->
   </form>
   </div>
  <!--<a class="button_rut" href="formulario_1.html">Ingresar</a>-->
 </div>
 
-<div class="event_box_red">
-  <h1>Alerta roja por sismo</h1>
-  <div class="event_content">
-  <div class="number_box_red">
-    <p id="numero">7.5º</p>
-  </div>
-  <div class="table">
-      <table>
-        <tr>
-          <td class="celda"><p class="table_text">Fecha:</p></td>
-          <td><p class="table_text">10 Marzo 2016</p></td>
-        </tr>
-        <tr>
-          <td class="celda"><p class="table_text">Hora:</p></td>
-          <td><p class="table_text">21:30 pm</p></td>
-        </tr>
-        <tr>
-          <td class="celda"><p class="table_text">Lugar:</p></td>
-          <td><p class="table_text">Región de los Ríos</p></td>
-        </tr>
-        <tr>
-          <td class="celda"><p class="table_text">Intensidad:</p></td>
-          <td><p class="table_text">VII</p></td>
+
+
+
+    <?php
+
+    $shots = mysql_query("SELECT id,fecha,hora,tipo,lugar,alerta,intensidad,magnitud FROM mesh_redport.evento ORDER BY id DESC LIMIT 1;") or die(mysql_error());
+
+    while($row = mysql_fetch_assoc($shots)) {
+
+        if($row["alerta"] == "Temprana Preventiva"){
+            echo "<div class='event_box_green'>";
+        }else if($row["alerta"] == "Amarilla"){
+            echo "<div class='event_box_yellow'>";
+        }else if($row["alerta"] == "Roja"){
+            echo "<div class='event_box_red'>";
+        }
+        echo "<h1>Alerta ".$row["alerta"]." por ".$row["tipo"]."</h1>";
+        echo "<div class='event_content'>";
+        if($row["alerta"] == "Temprana Preventiva"){
+            echo "<div class='number_box_green'>";
+            echo "<p id='numero'>7.5º</p>";
+        }else if($row["alerta"] == "Amarilla"){
+            echo "<div class='number_box_yellow'>";
+            echo "<p id='numero'>7.5º</p>";
+        }else if($row["alerta"] == "Roja"){
+            echo "<div class='number_box_red'>";
+            echo "<p id='numero'>7.5º</p>";
+        }
+        echo "</div><div class='table'><table><tr><td class=\"celda\"><p class=\"table_text\">Fecha:</p></td>";
+        echo "<td><p class=\"table_text\">".$row["fecha"]."</p></td></tr><tr><td class=\"celda\"><p class=\"table_text\">Hora:</p></td>";
+        echo "<td><p class=\"table_text\">".$row["hora"]."</p></td></tr><tr><td class=\"celda\"><p class=\"table_text\">Lugar:</p></td>";
+        echo " <td><p class=\"table_text\">".$row["lugar"];
+        if(strlen($row["lugar"]) < 5){ echo " Region"; };
+        echo "</p></td></tr><tr>";
+        if($row["intensidad"]) {
+            echo "<td class=\"celda\"><p class=\"table_text\">Intensidad:</p></td>";
+            echo " <td><p class=\"table_text\">" . $row["intensidad"] . " </p></td>";
+        };
+        echo "</tr><tr><td class=\"celda\"><p class=\"table_text\">Magnitud:</p></td>";
+        echo " <td><p class=\"table_text\">".$row["magnitud"]." Ricther</p></td>";
+
+
+    } ?>
+
         </tr>
       </table>
   </div>
@@ -132,7 +156,8 @@ include "conUCV.php";
             style: 'mapbox://styles/cleudio/ciqiooxr70000bjm0krbou6i0',
             center: [-71.601162, -33.017948],
             zoom: 10
-        });
+
+        })
         </script>
 
    </div>
@@ -143,6 +168,23 @@ include "conUCV.php";
 
 <script src="js/jquery-3.0.0.min.js"></script>
 <script src="js/main.js"></script>
+   <script>
+       var y = document.getElementById("latitu");
+       var z = document.getElementById("longitu");
+
+       function getLocation() {
+           if (navigator.geolocation) {
+               navigator.geolocation.getCurrentPosition(showPosition);
+           }
+       }
+
+       function showPosition(position) {
+               y.value = "" + position.coords.latitude;
+
+               z.value = "" + position.coords.longitude;
+       }
+   </script>
+
 
  </body>
 </html>

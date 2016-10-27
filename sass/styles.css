@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "redport-icons";
-  src:url("fonts/redport-icons.eot");
-  src:url("fonts/redport-icons.eot?#iefix") format("embedded-opentype"),
-    url("fonts/redport-icons.woff") format("woff"),
-    url("fonts/redport-icons.ttf") format("truetype"),
-    url("fonts/redport-icons.svg#redport-icons") format("svg");
+  src:url("../fonts/redport-icons.eot");
+  src:url("../fonts/redport-icons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/redport-icons.woff") format("woff"),
+    url("../fonts/redport-icons.ttf") format("truetype"),
+    url("../fonts/redport-icons.svg#redport-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 

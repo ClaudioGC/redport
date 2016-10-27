@@ -1,3 +1,6 @@
+<?php
+include "conUCV.php";
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -108,26 +111,70 @@
 
 <div class="container">
   <h1>Indicadores ambientales</h1>
+
+
   <div class="indicators">
+
+  <?php
+
+  $shots = mysql_query("SELECT id,tipo,valor,fecha FROM mesh_redport.sensores ORDER BY id DESC LIMIT 3;") or die(mysql_error());
+
+  while($row = mysql_fetch_assoc($shots)) { ?>
     <div class="indicator">
-      <div class="rpicon-uv"></div>
-      <p class="text_indicator">soleado</p>
+      <?php
+        if($row["tipo"] == "Temperatura"){
+          echo "<div class='rpicon-temperature'></div>";
+        }else if($row["tipo"] == "UV"){
+          echo "<div class='rpicon-uv'></div>";
+        }else if($row["tipo"] == "Humedad"){
+          echo "<div class='rpicon-humedity'></div>";
+        }
+
+      if($row["tipo"] == "Temperatura"){
+        echo "<p class='text_indicator'>".round($row['valor'])."°C</p>";
+      }else if($row["tipo"] == "UV"){
+
+        if(round($row["valor"]) <= 2){
+          echo "<p class='text_indicator' style='color:#41ab4b;'>BAJO</p>";
+        }else if(round($row["valor"]) <= 5){
+          echo "<p class='text_indicator' style='color:orange;'>MEDIO</p>";
+        }else if(round($row["valor"]) <= 7){
+          echo "<p class='text_indicator' style='color:orangered;'>ALTO</p>";
+        }else if(round($row["valor"]) <= 10){
+          echo "<p class='text_indicator' style='color:#f71138;'>MUY ALTO</p>";
+        }else if(round($row["valor"]) >= 11){
+          echo "<p class='text_indicator' style='color:#7a58dc;'>EXTREMO</p>";
+        }
+      }else if($row["tipo"] == "Humedad"){
+        echo "<p class='text_indicator'>".round($row['valor'])."%</p>";
+      }
+
+
+      if($row["tipo"] == "UV"){
+        //echo "<span class='text_uv'>uv</span>";
+        echo "<div class='bar_background'></div>";
+        echo "<div class='bar_uv' style='width: ".(abs($row['valor']*100)+10)."%;'></div>";
+      }else if($row["tipo"] == "Temperatura"){
+        echo "<div class='bar_background'></div>";
+        echo "<div class='bar_t' style='width: ".(abs($row['valor'])/50*75)."%;'></div>";
+      }else if($row["tipo"] == "Humedad"){
+        echo "<div class='bar_background'></div>";
+        echo "<div class='bar_h' style='width: ".(abs($row['valor'])/100*75)."%;'></div>";
+      }
+
+      ?>
+      <!--<p class="text_indicator">soleado</p>
       <span class="text_uv">uv</span>
       <div class="bar_uv_background"></div>
-      <div class="bar_uv"></div>
-  </div>
-    <div class="indicator">
-      <div class="rpicon-humedity"></div>
-      <p class="text_indicator">10%</p>
-      <div class="bar_background"></div>
-      <div class="bar_h"></div>
+      <div class="bar_uv"></div>-->
     </div>
-    <div class="indicator">
-      <div class="rpicon-temperature"></div>
-      <p class="text_indicator">30ºC</p>
-      <div class="bar_background"></div>
-      <div class="bar_t"></div>
-    </div>
+
+    <!--<div class="feedbody">
+      <div class="title"><?php echo $row["valor"]; ?></div>
+      <div class="feed-data">: gets a pass from <span><?php echo $row["tipo"]; ?></span> and he takes a shot!</div>
+    </div>-->
+  <?php } ?>
+    
 
   </div>
 </div>

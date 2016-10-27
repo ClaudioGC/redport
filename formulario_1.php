@@ -21,9 +21,9 @@ include "conUCV.php";
   	<div class="back-button"><a href="index.php"><div class="rpicon-back"></div></a></div>
     <div class="title_header"><h1>
 
-
+			Bienvenido
 			<?php
-			if($_REQUEST['rut']) {
+			/*if($_REQUEST['rut']) {
 				$rut = $_REQUEST['rut'];
 				$sql = 'SELECT * FROM personas WHERE rut = ' . $rut;
 				$resultado = mysql_query($sql, $enlace);
@@ -41,7 +41,7 @@ include "conUCV.php";
 				mysql_free_result($resultado);
 			}else{
 				echo "Error";
-			}
+			}*/
 			?>
 
 
@@ -112,10 +112,9 @@ include "conUCV.php";
   		<div class="list_box">
 			<?php
 
-
 			if($_REQUEST['rut']) {
 				$rut = $_REQUEST['rut'];
-				$sql = 'SELECT nombre FROM familia WHERE familiar = ' . $rut;
+				$sql = 'SELECT tipo FROM familia WHERE familiar = ' . ip2long($rut);
 				$resultado = mysql_query($sql, $enlace);
 
 				if (!$resultado) {
@@ -148,7 +147,10 @@ include "conUCV.php";
 				// $array[3] se actualizará con cada valor de $array...
 				echo '<div class="text_box_2">';
 				echo '<li>';
-				print_r($clave['nombre']);
+				if($clave['tipo'] == 0){ echo "Menor"; }
+				elseif($clave['tipo'] == 1){ echo "Adulto"; }
+				elseif($clave['tipo'] == 2){ echo "3ª Edad"; }
+				else{ echo "Especial"; }
 				echo '</li>';
 				echo '</div>';
 
@@ -161,7 +163,7 @@ include "conUCV.php";
 			// 0 => 2 Array ( [0] => 2, [1] => 4, [2] => 6, [3] => 2 )
 			// 1 => 4 Array ( [0] => 2, [1] => 4, [2] => 6, [3] => 4 )
 			// 2 => 6 Array ( [0] => 2, [1] => 4, [2] => 6, [3] => 6 )
-			// 3 => 6 Array ( [0] => 2, [1] => 4, [2] => 6, [3] => 6 )
+			// 3 => 6 Array ( [0] => 2, [1] => 4, [2] => 6, [3] => 6 )*/
 			?>
 
 		</div>
@@ -179,7 +181,7 @@ include "conUCV.php";
 	</div>
 </div>
 </div>
-<a class="button" href="home.html">Terminado</a>
+<a class="button" href="home.php">Terminado</a>
 
 
 <script src="js/jquery-3.0.0.min.js"></script>

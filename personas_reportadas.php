@@ -1,3 +1,9 @@
+<?php
+include "conUCV.php";
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -29,12 +35,96 @@
 
   <div class="container">
 
-<!-- caja de comentarios -->
+    <!-- caja de comentarios -->
     <div class="container_list">
       <ul id="user_list" class="container_users_list">
         <li class="users_li">
+
+    <?php
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*::                                                                         :*/
+/*::  This routine calculates the distance between two points (given the     :*/
+/*::  latitude/longitude of those points). It is being used to calculate     :*/
+/*::  the distance between two locations using GeoDataSource(TM) Products    :*/
+/*::                                                                         :*/
+/*::  Definitions:                                                           :*/
+/*::    South latitudes are negative, east longitudes are positive           :*/
+/*::                                                                         :*/
+/*::  Passed to function:                                                    :*/
+/*::    lat1, lon1 = Latitude and Longitude of point 1 (in decimal degrees)  :*/
+/*::    lat2, lon2 = Latitude and Longitude of point 2 (in decimal degrees)  :*/
+/*::    unit = the unit you desire for results                               :*/
+/*::           where: 'M' is statute miles (default)                         :*/
+/*::                  'K' is kilometers                                      :*/
+/*::                  'N' is nautical miles                                  :*/
+/*::  Worldwide cities and other features databases with latitude longitude  :*/
+/*::  are available at http://www.geodatasource.com                          :*/
+/*::                                                                         :*/
+/*::  For enquiries, please contact sales@geodatasource.com                  :*/
+/*::                                                                         :*/
+/*::  Official Web site: http://www.geodatasource.com                        :*/
+/*::                                                                         :*/
+/*::         GeoDataSource.com (C) All Rights Reserved 2015              :*/
+/*::                                                                         :*/
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+function distance($lat1, $lon1, $lat2, $lon2, $unit) {
+
+  $theta = $lon1 - $lon2;
+  $dist = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) +  cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($theta));
+  $dist = acos($dist);
+  $dist = rad2deg($dist);
+  $miles = $dist * 60 * 1.1515;
+  $unit = strtoupper($unit);
+
+  if ($unit == "K") {
+      return ($miles * 1.609344);
+  } else if ($unit == "N") {
+      return ($miles * 0.8684);
+  } else {
+      return $miles;
+  }
+}
+//TU USUARIO
+$sql = 'SELECT cord1,cord2,registroIP FROM personas WHERE cord1 != 0';
+        $resultado = mysql_query($sql, $enlace);
+
+        if (!$resultado) {
+          echo "Error de BD, no se pudo consultar la base de datos\n";
+          echo "Error MySQL:" . mysql_error();
+          exit;
+        }
+
+        while ($fila = mysql_fetch_assoc($resultado)) {
+          $array[] = $fila;
+          //echo 'mi coord es lat '.$fila['cord1'].' longi '.$fila['cord2'].'<br>';
+
+          //TODOS LOS USUARIOS
+          $sql2 = 'SELECT cord1,cord2,registroIP FROM personas WHERE cord1 != 0 and registroIP !='.$fila['registroIP'];
+          $resultado2 = mysql_query($sql2, $enlace);
+
+          if (!$resultado2) {
+            echo "Error de BD, no se pudo consultar la base de datos\n";
+            echo "Error MySQL:" . mysql_error();
+            exit;
+          }
+
+          while ($fila2 = mysql_fetch_assoc($resultado2)) {
+            $array2[] = $fila2;
+
+            echo'<div class="user_box"><a href="#"><div class="user_avatar_2"><div class="rpicon-user-good-small"></div></div><div class="username"><h2 id="user_name" class="username">';
+            echo $fila2['registroIP'].'</h2><p id="distance" class="username">A ';
+            echo round(10*distance($fila2['cord1'], $fila2['cord2'], $fila['cord1'], $fila['cord2'], "K"),2) . " Metros</p></div></a></div>";
+
+
+          
+          }
+        }
+?>
+
+
             
-            
+            <!--
               <div class="user_box">
                 <a href="#">
                   <div class="user_avatar_2"><div class="rpicon-user-good-small"></div></div>
@@ -121,7 +211,7 @@
                 <div class="state_user_box"><div class="rpicon-trapped"></div></div>
                 <div class="state_user_box"><div class="rpicon-injured"></div></div>
               </div>
-            </div>
+            </div>-->
             
         </li>
       </ul>

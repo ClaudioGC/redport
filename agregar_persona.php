@@ -25,20 +25,34 @@ include "conUCV.php";
 
   </div>
 
-	   <form action="agregar_persona_POST.php" class="login-rut_2" method="POST">
-<div class="container">
-	<!--<label class="label_rut_2" for="rut">Ingresa el nombre</label>-->
+  <div class="container">
+
+  <h1 id="title_form">Indique a la persona</h1>
+
+  <div class="markers">
+    <input type="radio" name="estate" id="checkbox_big_1" class="marker" onclick="checkType(this,0)"/>
+    <label for="checkbox_big_1" class="rpicon-toggle-small-inverse"><div class="rpicon-landslide"></div><p class="text_marker"><br>Menor</p></label>
+    <input type="radio" name="estate" id="checkbox_big_2" class="marker" onclick="checkType(this,1)"/>
+    <label for="checkbox_big_2" class="rpicon-toggle-small-inverse"><div class="rpicon-cut-bridge"></div><p class="text_marker"><br>Adulto</p></label>
+    <input type="radio" name="estate" id="checkbox_big_3" class="marker" onclick="checkType(this,2)"/>
+    <label for="checkbox_big_3" class="rpicon-toggle-small-inverse"><div class="rpicon-fire"></div><p class="text_marker"><br>3ª Edad</p></label>
+    <input type="radio" name="estate" id="checkbox_big_4" class="marker" onclick="checkType(this,3)"/>
+    <label for="checkbox_big_4" class="rpicon-toggle-small-inverse"><div class="rpicon-landslide"></div><p class="text_marker"><br>Especial</p></label>
+  </div>
+</div>
+
+	   <form action="agregar_persona_POST.php" method="POST">
+<!--<div class="container">
 	<h1 id="title_form">Ingresa el nombre</h1>
 
 
-	<div class="input_rut">
-		<!--<form action="agregar_persona_POST.php" class="login-rut_2" method="POST">-->
-		    <input class="login-rut__box" type="text" id="nombre" name="nombre" placeholder="Ingresa el nombre">
-			<input type="text" hidden id="rut" name="rut" value=<?php echo $_REQUEST['rut']; ?>>
-			<input type="text" hidden id="estado" name="estado" value="">
-		  <!--</form>-->
-	</div>
-</div>
+	<div class="input_rut">-->
+		    <input hidden type="text" id="tipo" name="tipo" value="">
+			<input hidden type="text" id="rut" name="rut" value=<?php echo $_REQUEST['rut']; ?>>
+			<input hidden type="text" id="estado" name="estado" value="">
+	<!--</div>
+</div>-->
+
 
 <div class="container">
 
@@ -68,7 +82,7 @@ include "conUCV.php";
    
 </div>
 
-		   <input class="button_rut" type="submit" />
+		   <input class="button_ip" type="submit" />
 
 
 
@@ -81,6 +95,15 @@ include "conUCV.php";
 <script src="js/main.js"></script>
    <script>
 	   //var estado+"";
+	   function checkType(radio,sta)
+	   {
+	   	if(radio.checked){
+	   		var valorT = document.getElementById("tipo").value;
+	   		document.getElementById("tipo").value = sta;
+	   	}
+	   }
+	   </script>
+	   <script>
    function checkAddress(checkbox,sta)
    {
    if (checkbox.checked)
@@ -94,9 +117,9 @@ include "conUCV.php";
 	   		if(sta == 0){
 	   			document.getElementById("estado").value = 0;
 		   		document.getElementById("toggle_small_8").checked = false;
-		   document.getElementById("toggle_small_9").checked = false;
-		   document.getElementById("toggle_small_10").checked = false;
-		   document.getElementById("toggle_small_11").checked = false;
+		   		document.getElementById("toggle_small_9").checked = false;
+		   		document.getElementById("toggle_small_10").checked = false;
+		   		document.getElementById("toggle_small_11").checked = false;
 	   		}
 		   else
 		   {

@@ -1114,16 +1114,6 @@ input:focus {
   margin-bottom: 16px;
   color: #fcc92f; }
 
-.bar_uv_background {
-  width: 57px;
-  height: 3px;
-  background-color: #4c3e2d;
-  position: relative;
-  display: inline-block;
-  margin-top: 15px;
-  left: 7px;
-  bottom: 21px; }
-
 .bar_background {
   width: 70px;
   height: 3px;
@@ -1135,13 +1125,12 @@ input:focus {
   bottom: 21px; }
 
 .bar_uv {
-  width: 40px;
   height: 3px;
-  background-color: #ea711f;
+  background-color: #fcc92f;
   position: relative;
   display: inline-block;
   margin-top: 15px;
-  left: 25px;
+  margin-left: 11px;
   bottom: 43px; }
 
 .text_uv {
@@ -1157,7 +1146,6 @@ input:focus {
   color: #fcc92f; }
 
 .bar_h {
-  width: 10px;
   height: 3px;
   background-color: #fcc92f;
   position: relative;
@@ -1167,7 +1155,6 @@ input:focus {
   bottom: 43px; }
 
 .bar_t {
-  width: 30px;
   height: 3px;
   background-color: #fcc92f;
   position: relative;

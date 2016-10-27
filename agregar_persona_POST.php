@@ -8,9 +8,9 @@
 include "conUCV.php";
 
 $rut = $_REQUEST['rut'];
-$nombre = $_REQUEST['nombre'];
+$nombre = $_REQUEST['tipo'];
 $estado = $_REQUEST['estado'];
-$sql = 'INSERT INTO familia (nombre, familiar, estado) VALUES("'.$nombre.'","'.$rut.'","'.$estado.'")';
+$sql = 'INSERT INTO familia (tipo, familiar, estado) VALUES("'.$nombre.'","'.ip2long($rut).'","'.$estado.'")';
 echo $sql;
 $resultado = mysql_query($sql, $enlace);
 
