@@ -7,21 +7,13 @@
  */
 include "conUCV.php";
 
-$rut = $_REQUEST['rut'];
-$lati = $_REQUEST['latitu'];
-$longi = $_REQUEST['longitu'];
-//$long = ip2long($rut);
-$long = ip2long($rut);
-
-
 
 $datenow = date("d/m/y - H:i:s");
 $c1 = $lati;
 $c2 = $longi;
-$sql = 'INSERT INTO personas (registroIP,dateLogin, cord1, cord2,detalle) VALUES("'.$long.'","'.$datenow.'","'.$c1.'","'.$c2.'","'.$_SERVER['HTTP_USER_AGENT'].'")';
-echo $sql;
+$sql = "UPDATE personas SET tipo = '".$_REQUEST['tipo']."', estado = '".$_REQUEST['estado']."' WHERE registroIP = '".ip2long($_REQUEST['ip'])."' and detalle = '".$_REQUEST['detalle']."'";
 $resultado = mysql_query($sql, $enlace);
-
+echo $sql;
 if (!$resultado) {
     echo "Error de BD, no se pudo consultar la base de datos\n";
     echo "Error MySQL:" . mysql_error();
@@ -29,7 +21,7 @@ if (!$resultado) {
 
 }
 
-header("Location: formulario_1.php?rut=$rut");
+header("Location: agregar_persona.php?rut=".$REQUEST['ip']);
 die();
 
 /*while ($fila = mysql_fetch_assoc($resultado)) {

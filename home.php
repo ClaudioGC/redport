@@ -24,7 +24,9 @@ include "conUCV.php";
    <!-- ======= header======= -->
   <div class="header">
     <div class="message-button"><a href="mensajes.html"><div class="rpicon-message"></div></a></div>
-    <div class="title_header"><h1>Gloria Aracena</h1></div>
+    <div class="title_header"><div class="logo">
+    <img src="img/Logo_redport_web.png" alt="logo_redport">
+  </div></div>
     <div class="menu-button"><a href="#"><div class="rpicon-menu"></div></a></div>
    <!-- <div class="back-button"><a href="formulario_1.html"><div class="rpicon-back"></div></a></div>-->
     <!--<div class="message-button"><a href="mensajes.html"><div class="rpicon-message"></div></a></div>-->
@@ -247,7 +249,7 @@ include "conUCV.php";
   <div class="container">
    <div class="map_people">
      <p id="texto_mapa">100 personas reportadas</p>
-     <a class="button_two" href="personas_reportadas.html">ver más</a>
+     <a class="button_two" href="personas_reportadas.php?rut=<?php echo $_REQUEST['rut'];?>">ver más</a>
    </div>
    <div class="map">
       

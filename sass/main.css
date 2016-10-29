@@ -104,7 +104,7 @@ body {
     display: inline-block;
     position: relative;
     width: 65%;
-    margin: 7px 55px 7px 70px; }
+    margin: -5px 55px 7px 70px; }
   .header .navbar {
     width: 22.5em;
     display: block; }
@@ -126,7 +126,7 @@ body {
 .menu-button {
   float: right;
   display: inline-block;
-  margin: -51px 20px 0px 0px; }
+  margin: -65px 20px 0px 0px; }
 
 .back-button {
   display: inline-block;

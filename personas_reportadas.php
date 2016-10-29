@@ -86,7 +86,7 @@ function distance($lat1, $lon1, $lat2, $lon2, $unit) {
   }
 }
 //TU USUARIO
-$sql = 'SELECT cord1,cord2,registroIP FROM personas WHERE cord1 != 0';
+$sql = 'SELECT cord1,cord2,registroIP,detalle,estado FROM personas WHERE cord1 != 0 and registroIP = "'.ip2long($_REQUEST['rut']).'" and detalle = "'.$_SERVER['HTTP_USER_AGENT'].'"';
         $resultado = mysql_query($sql, $enlace);
 
         if (!$resultado) {
@@ -112,15 +112,20 @@ $sql = 'SELECT cord1,cord2,registroIP FROM personas WHERE cord1 != 0';
           while ($fila2 = mysql_fetch_assoc($resultado2)) {
             $array2[] = $fila2;
 
-            echo'<div class="user_box"><a href="#"><div class="user_avatar_2"><div class="rpicon-user-good-small"></div></div><div class="username"><h2 id="user_name" class="username">';
-            echo $fila2['registroIP'].'</h2><p id="distance" class="username">A ';
-            echo round(10*distance($fila2['cord1'], $fila2['cord2'], $fila['cord1'], $fila['cord2'], "K"),2) . " Metros</p></div></a></div>";
-
-
+            echo'<div class="user_box"><a href="#"><div class="user_avatar_2"><div class="rpicon-user-'
+            if($fila2['estado']>0)echo 'bad';
+            else echo 'good';
+            echo'-small"></div></div><div class="username"><h2 id="user_name" class="username">';
+            echo /*$fila2['registroIP']*/'Persona'.'</h2><br><p id="distance" class="username">A ';
+            $distancia_real = distance($fila2['cord1'], $fila2['cord2'], $fila['cord1'], $fila['cord2'], "K");
+            if($distancia_real >=1) echo round($distancia_real,0)." Km.</p></div></a></div>";
+            else echo round($distancia_real*1000,0)." Mt.</p></div></a></div>";
           
           }
         }
 ?>
+
+
 
 
             
