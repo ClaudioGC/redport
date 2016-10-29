@@ -153,6 +153,7 @@ include "conUCV.php";
 
 
       if($row["tipo"] == "UV"){
+<<<<<<< HEAD:home.php
         //echo "<span class='text_uv'>uv</span>";
         echo "<div class='bar_background'></div>";
         echo "<div class='bar_uv' style='width: ".(abs($row['valor']*100)+10)."%;'></div>";
@@ -162,6 +163,17 @@ include "conUCV.php";
       }else if($row["tipo"] == "Humedad"){
         echo "<div class='bar_background'></div>";
         echo "<div class='bar_h' style='width: ".(abs($row['valor'])/100*75)."%;'></div>";
+=======
+        echo "<span class='text_uv'>uv</span>";
+        echo "<div class='bar_uv_background'></div>";
+        echo "<div class='bar_uv'></div>";
+      }else if($row["tipo"] == "Temperatura"){
+        echo "<div class='bar_background'></div>";
+        echo "<div class='bar_t'></div>";
+      }else if($row["tipo"] == "Humedad"){
+        echo "<div class='bar_background'></div>";
+        echo "<div class='bar_h'></div>";
+>>>>>>> origin/mesh-redport:home.php
       }
 
       ?>

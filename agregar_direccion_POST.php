@@ -8,17 +8,28 @@
 include "conUCV.php";
 
 $rut = $_REQUEST['rut'];
+<<<<<<< HEAD
 $lati = $_REQUEST['latitu'];
 $longi = $_REQUEST['longitu'];
 //$long = ip2long($rut);
 $long = ip2long($rut);
+=======
+//$long = ip2long($rut);
+$long = ip2long("10.30.61.202");
+>>>>>>> origin/mesh-redport
 
 
 
 $datenow = date("d/m/y - H:i:s");
+<<<<<<< HEAD
 $c1 = $lati;
 $c2 = $longi;
 $sql = 'INSERT INTO personas (registroIP,dateLogin, cord1, cord2,detalle) VALUES("'.$long.'","'.$datenow.'","'.$c1.'","'.$c2.'","'.$_SERVER['HTTP_USER_AGENT'].'")';
+=======
+$c1 = 0;
+$c2 = 0;
+$sql = 'INSERT INTO personas (registroIP,dateLogin, cord1, cord2) VALUES("'.$long.'","'.$datenow.'","'.$c1.'","'.$c2.'")';
+>>>>>>> origin/mesh-redport
 echo $sql;
 $resultado = mysql_query($sql, $enlace);
 

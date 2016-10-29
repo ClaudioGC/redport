@@ -39,6 +39,13 @@ include "conUCV.php";
       Enviar SOS</a>
 </div>
 
+    <p>Your Location: <span id="location"></span></p>
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+
+    <p id="demo"></p>
+
 <div class="container">
 
   <h1 class="h1_inverse">REPÓRTATE</h1>
@@ -169,20 +176,34 @@ include "conUCV.php";
 <script src="js/jquery-3.0.0.min.js"></script>
 <script src="js/main.js"></script>
    <script>
+<<<<<<< HEAD
        var y = document.getElementById("latitu");
        var z = document.getElementById("longitu");
+=======
+       var x = document.getElementById("demo");
+>>>>>>> origin/mesh-redport
 
        function getLocation() {
            if (navigator.geolocation) {
                navigator.geolocation.getCurrentPosition(showPosition);
+<<<<<<< HEAD
+=======
+           } else {
+               x.innerHTML = "Geolocation is not supported by this browser.";
+>>>>>>> origin/mesh-redport
            }
        }
 
        function showPosition(position) {
+<<<<<<< HEAD
                y.value = "" + position.coords.latitude;
 
                z.value = "" + position.coords.longitude;
                document.getElementById("btn_reportar").disabled = false;
+=======
+           x.innerHTML = "Latitude: " + position.coords.latitude +
+               "<br>Longitude: " + position.coords.longitude;
+>>>>>>> origin/mesh-redport
        }
    </script>
 
