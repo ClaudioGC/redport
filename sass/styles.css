@@ -2,9 +2,7 @@
 
 @font-face {
   font-family: "redport-icons";
-  src:url("../fonts/redport-icons.eot");
-  src:url("../fonts/redport-icons.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/redport-icons.woff") format("woff"),
+  src:url("../ort-icons.woff") format("woff"),
     url("../fonts/redport-icons.ttf") format("truetype"),
     url("../fonts/redport-icons.svg#redport-icons") format("svg");
   font-weight: normal;
@@ -77,9 +75,6 @@
 .rpicon-user-good-small:before {
   content: "\6d";
 }
-.rpicon-temperature:before {
-  content: "\70";
-}
 .rpicon-tsunami:before {
   content: "\71";
 }
@@ -91,12 +86,6 @@
 }
 .rpicon-uv:before {
   content: "\6e";
-}
-.rpicon-trapped:before {
-  content: "\74";
-}
-.rpicon-injured:before {
-  content: "\75";
 }
 .rpicon-message:before {
   content: "\76";
@@ -128,9 +117,6 @@
 .rpicon-fire:before {
   content: "\43";
 }
-.rpicon-humedity:before {
-  content: "\6f";
-}
 .rpicon-hospital:before {
   content: "\46";
 }
@@ -139,4 +125,28 @@
 }
 .rpicon-collection-center:before {
   content: "\48";
+}
+.rpicon-temperature:before {
+  content: "\70";
+}
+.rpicon-humedity:before {
+  content: "\6f";
+}
+.rpicon-injured:before {
+  content: "\75";
+}
+.rpicon-caught:before {
+  content: "\74";
+}
+.rpicon-kid:before {
+  content: "\49";
+}
+.rpicon-old:before {
+  content: "\4a";
+}
+.rpicon-especial:before {
+  content: "\4b";
+}
+.rpicon-adult:before {
+  content: "\4c";
 }
